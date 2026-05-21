@@ -23,10 +23,10 @@
     <loc>//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2026-05-21T10:39:29+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/archives/</loc>
-  </url><url>
     <loc>//localhost:1313/about/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/archives/</loc>
   </url>
 </urlset>
