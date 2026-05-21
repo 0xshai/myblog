@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>我的博客</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on 我的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 21 May 2026 11:34:13 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一篇文章</title>
+      <link>//localhost:1313/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Thu, 21 May 2026 11:34:13 +0800</pubDate>
+      <guid>//localhost:1313/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <description>&lt;p&gt;因为 Hugo 有一个&amp;quot;草稿&amp;quot;机制：&lt;/p&gt;
+&lt;p&gt;draft: true = 草稿，hugo server 默认不显示&lt;/p&gt;
+&lt;p&gt;draft: false = 正式发布，才会显示在网站上&lt;/p&gt;
+&lt;p&gt;相当于你在写文章时可以先存成草稿，满意了再改成 false 发布。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/archives/</guid>
+      <description>&lt;p&gt;-&amp;ndash;&lt;/p&gt;
+&lt;p&gt;title: &amp;ldquo;归档&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;layout: &amp;ldquo;archives&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;url: &amp;ldquo;/archives/&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;summary: &amp;ldquo;archives&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;-&amp;ndash;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

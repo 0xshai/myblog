@@ -1,0 +1,33 @@
+baseURL = "/"
+locale = "zh-CN"
+title = "我的博客"
+theme = "PaperMod"
+
+[params]
+  # 首页模式：profile显示头像简介，index显示文章列表
+  homeInfoParams = {Title = "你好 👋", Content = "欢迎来到我的博客"}
+  defaultTheme = "auto"        # 自动跟随系统深色/浅色
+  ShowReadingTime = true       # 阅读时间
+  ShowShareButtons = false     # 分享按钮
+  ShowPostNavLinks = true      # 上一篇/下一篇
+  ShowBreadCrumbs = true       # 面包屑导航
+  ShowCodeCopyButtons = true   # 代码块复制按钮
+  ShowToc = true               # 文章目录
+  TocOpen = false              # 目录默认折叠
+
+[menu]
+  [[menu.main]]
+    name = "文章"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    name = "归档"
+    url = "/archives/"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]  # JSON给搜索功能用
