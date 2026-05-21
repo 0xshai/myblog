@@ -1,7 +1,8 @@
 +++
-date = '2026-05-21T18:00:00+08:00'
+date = '2026-05-21T11:00:00+08:00'
 draft = false
 title = '为博客添加访问统计：Umami + 不蒜子'
+slug = 'umami-busuanzi-analytics'
 tags = ['Hugo', '建站', 'Umami', '不蒜子', '统计']
 +++
 
@@ -74,7 +75,7 @@ tags = ['Hugo', '建站', 'Umami', '不蒜子', '统计']
 
 ### 4. 注入博客
 
-在 `layouts/partials/` 目录下新建 `extend_head.html`（PaperMod 专用扩展钩子，不会覆盖主题文件）：
+在 `layouts/_partials/` 目录下新建 `extend_head.html`（PaperMod 专用扩展钩子，不会覆盖主题文件）：
 
 ```html
 <script defer src="https://cloud.umami.is/script.js" data-website-id="你的ID"></script>
@@ -88,7 +89,7 @@ tags = ['Hugo', '建站', 'Umami', '不蒜子', '统计']
 
 ### 1. 加载脚本
 
-在 `layouts/partials/extend_head.html` 里追加一行：
+在 `layouts/_partials/extend_head.html` 里追加一行：
 
 ```html
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -96,7 +97,7 @@ tags = ['Hugo', '建站', 'Umami', '不蒜子', '统计']
 
 ### 2. 显示网站总访问量
 
-在 `layouts/partials/extend_footer.html` 里加入：
+在 `layouts/_partials/extend_footer.html` 里加入：
 
 ```html
 <div style="text-align:center; padding: 10px; font-size: 0.85em; opacity: 0.6;">
@@ -135,3 +136,4 @@ git push
 - 本地 `hugo server` 预览时不蒜子数字显示异常，属正常现象，部署到线上才准确
 - Brave 等浏览器内置拦截器会屏蔽不蒜子脚本，导致数字不显示，不影响其他普通访客
 - Umami 的统计数据在后台查看，不蒜子的数字直接显示在页面上，两套数据不互通
+
