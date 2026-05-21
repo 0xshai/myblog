@@ -5,14 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>我的博客</title>
+<title>归档 | SHAI的技术博客</title>
 <meta name="keywords" content="">
-<meta name="description" content="-&ndash;
-title: &ldquo;归档&rdquo;
-layout: &ldquo;archives&rdquo;
-url: &ldquo;/archives/&rdquo;
-summary: &ldquo;archives&rdquo;
--&ndash;">
+<meta name="description" content="archives">
 <meta name="author" content="">
 <link rel="canonical" href="//localhost:1313/archives/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
@@ -71,11 +66,11 @@ summary: &ldquo;archives&rdquo;
 
 </script>
 </head>
-<body id="top">
+<body class="list" id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="//localhost:1313/" accesskey="h" title="我的博客 (Alt + H)">我的博客</a>
+            <a href="//localhost:1313/" accesskey="h" title="SHAI的技术博客 (Alt + H)">SHAI的技术博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -115,50 +110,47 @@ summary: &ldquo;archives&rdquo;
                     <span class="active">归档</span>
                 </a>
             </li>
+            <li>
+                <a href="//localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main">
 
-<article class="post-single">
-  <header class="post-header">
-    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
-            <a href="/">Home</a>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-        <polyline points="9 18 15 12 9 6"></polyline>
-    </svg>
-</nav>
-    <h1 class="post-title entry-hint-parent">
-      
-    </h1>
-    <div class="post-meta">
+<header class="page-header">
+  <h1>
+    归档
+  </h1>
+</header>
+<div class="archive-year">
+  <h2 class="archive-year-header" id="2026">
+    <a class="archive-header-link" href="#2026">2026</a>
+    <sup class="archive-count">&nbsp;1</sup>
+  </h2>
+  <div class="archive-month">
+    <h3 class="archive-month-header" id="2026-May">
+      <a class="archive-header-link" href="#2026-May">May</a>
+      <sup class="archive-count">&nbsp;1</sup>
+    </h3>
+    <div class="archive-posts">
+      <div class="archive-entry">
+        <h3 class="archive-entry-title entry-hint-parent">用 Hugo + Cloudflare Pages 搭建个人博客
+        </h3>
+        <div class="archive-meta">
 
-<span>1 min</span>
-
-</div>
-  </header> 
-
-  <div class="post-content md-content"><p>-&ndash;</p>
-<p>title: &ldquo;归档&rdquo;</p>
-<p>layout: &ldquo;archives&rdquo;</p>
-<p>url: &ldquo;/archives/&rdquo;</p>
-<p>summary: &ldquo;archives&rdquo;</p>
-<p>-&ndash;</p>
-
-
+<span title='2026-05-21 10:39:29 +0800 CST'>May 21, 2026</span>&nbsp;·&nbsp;<span>2 min</span></div>
+        <a class="entry-link" aria-label="post link to 用 Hugo &#43; Cloudflare Pages 搭建个人博客" href="//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"></a>
+      </div>
+    </div>
   </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-
-  </footer>
-</article>
+</div>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="//localhost:1313/">我的博客</a></span> · 
+        <span>&copy; 2026 <a href="//localhost:1313/">SHAI的技术博客</a></span> · 
 
     
     
@@ -234,53 +226,6 @@ summary: &ldquo;archives&rdquo;
         }
     })
 
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
-
-        function copyingDone() {
-            copybutton.innerHTML = 'copied!';
-            setTimeout(() => {
-                copybutton.innerHTML = 'copy';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
 </script>
 </body>
 

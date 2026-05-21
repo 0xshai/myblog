@@ -1,12 +1,14 @@
-\---
++++
 
-title: "归档"
+title = "归档"
 
-layout: "archives"
+layout = "archives"
 
-url: "/archives/"
+url = "/archives/"
 
-summary: "archives"
+summary = "archives"
 
-\---
+draft = false
+
++++
 

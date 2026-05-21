@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Categories | SHAI的技术博客</title>
+<title>建站 | SHAI的技术博客</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="//localhost:1313/categories/">
+<link rel="canonical" href="//localhost:1313/tags/%E5%BB%BA%E7%AB%99/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="//localhost:1313/categories/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="//localhost:1313/categories/">
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/tags/%E5%BB%BA%E7%AB%99/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="//localhost:1313/tags/%E5%BB%BA%E7%AB%99/">
 <noscript>
     <style>
         #theme-toggle,
@@ -119,13 +119,41 @@
         </ul>
     </nav>
 </header>
-<main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
+<main class="main"> 
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/tags/">Tags</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+  <h1>
+    建站
+  </h1>
 </header>
 
-<ul class="terms-tags">
-</ul>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">用 Hugo &#43; Cloudflare Pages 搭建个人博客
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 零成本、全静态、自动部署。用 Hugo 搭建个人博客并托管到 Cloudflare Pages 的完整流程。
+准备工作 安装以下工具，并注册好账号：
+Git Hugo（Windows 用 winget install Hugo.Hugo.Extended） GitHub 账号 Cloudflare 账号 一、创建站点 hugo new site myblog cd myblog git init 二、安装 PaperMod 主题 git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod 三、配置 hugo.toml 用以下内容替换根目录的 hugo.toml：
+baseURL = &#34;/&#34; locale = &#34;zh-CN&#34; title = &#34;我的博客&#34; theme = &#34;PaperMod&#34; [params] homeInfoParams = {Title = &#34;你好 👋&#34;, Content = &#34;欢迎来到我的博客&#34;} defaultTheme = &#34;auto&#34; ShowReadingTime = true ShowPostNavLinks = true ShowBreadCrumbs = true ShowCodeCopyButtons = true ShowToc = true [menu] [[menu.main]] name = &#34;文章&#34; url = &#34;/posts/&#34; weight = 1 [[menu.main]] name = &#34;标签&#34; url = &#34;/tags/&#34; weight = 2 [[menu.main]] name = &#34;归档&#34; url = &#34;/archives/&#34; weight = 3 [outputs] home = [&#34;HTML&#34;, &#34;RSS&#34;, &#34;JSON&#34;] 四、创建归档页 hugo new content archives.md 打开文件，内容替换为：
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-21 10:39:29 +0800 CST'>May 21, 2026</span>&nbsp;·&nbsp;<span>2 min</span></footer>
+  <a class="entry-link" aria-label="post link to 用 Hugo &#43; Cloudflare Pages 搭建个人博客" href="//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"></a>
+</article>
     </main>
     
 <footer class="footer">

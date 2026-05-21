@@ -1,11 +1,11 @@
 baseURL = "/"
 locale = "zh-CN"
-title = "我的博客"
+title = "SHAI的技术博客"
 theme = "PaperMod"
 
 [params]
   # 首页模式：profile显示头像简介，index显示文章列表
-  homeInfoParams = {Title = "你好 👋", Content = "欢迎来到我的博客"}
+  homeInfoParams = {Title = "0xSHAI 👋", Content = "探索 Web 与系统的边界 — 涉猎 HTML / CSS / Hugo / Python / Go，以及一切值得折腾的技术。"}
   defaultTheme = "auto"        # 自动跟随系统深色/浅色
   ShowReadingTime = true       # 阅读时间
   ShowShareButtons = false     # 分享按钮
@@ -28,6 +28,10 @@ theme = "PaperMod"
     name = "归档"
     url = "/archives/"
     weight = 3
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]  # JSON给搜索功能用

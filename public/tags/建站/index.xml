@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on SHAI的技术博客</title>
-    <link>//localhost:1313/posts/</link>
-    <description>Recent content in Posts on SHAI的技术博客</description>
+    <title>建站 on SHAI的技术博客</title>
+    <link>//localhost:1313/tags/%E5%BB%BA%E7%AB%99/</link>
+    <description>Recent content in 建站 on SHAI的技术博客</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 21 May 2026 10:39:29 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用 Hugo &#43; Cloudflare Pages 搭建个人博客</title>
       <link>//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
