@@ -5,7 +5,7 @@ theme = "PaperMod"
 
 [params]
   # 首页模式：profile显示头像简介，index显示文章列表
-  homeInfoParams = {Title = "0xSHAI 👋", Content = "探索 Web 与系统的边界 — 涉猎 HTML / CSS / Hugo / Python / Go，以及一切值得折腾的技术。"}
+  homeInfoParams = {Title = "0xSHAI 👋", Content = "> 写代码、做游戏、搞 AI、拥抱开源。\n> 折腾是目的，开源是态度。"}
   defaultTheme = "auto"        # 自动跟随系统深色/浅色
   ShowReadingTime = true       # 阅读时间
   ShowShareButtons = false     # 分享按钮
