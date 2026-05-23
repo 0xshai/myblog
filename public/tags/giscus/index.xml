@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Giscus on SHAI的技术博客</title>
+    <link>//localhost:1313/tags/giscus/</link>
+    <description>Recent content in Giscus on SHAI的技术博客</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 23 May 2026 10:00:00 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/giscus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为博客添加评论区：Giscus</title>
+      <link>//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</link>
+      <pubDate>Sat, 23 May 2026 10:00:00 +0800</pubDate>
+      <guid>//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;基于 GitHub Discussions 的免费评论系统，数据在自己手里，零成本接入 Hugo PaperMod。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;为什么选-giscus&#34;&gt;为什么选 Giscus&lt;/h2&gt;&#xA;&lt;p&gt;给静态博客加评论的方案不少，常见的有 Disqus、Valine、Waline、Giscus 等。&lt;/p&gt;&#xA;&lt;p&gt;Giscus 的优势：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;免费&lt;/strong&gt;：完全免费，无广告&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;数据自托管&lt;/strong&gt;：评论存在你自己的 GitHub 仓库 Discussions 里，不依赖第三方服务器&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;无需单独注册&lt;/strong&gt;：访客用 GitHub 账号登录即可留言&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;隐私友好&lt;/strong&gt;：不追踪用户，不植入 Cookie&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;PaperMod 原生支持&lt;/strong&gt;：无需改模板，配置几行 toml 即可&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;唯一限制：访客需要有 GitHub 账号才能评论，适合技术类博客。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;一开启仓库-discussions&#34;&gt;一、开启仓库 Discussions&lt;/h2&gt;&#xA;&lt;p&gt;打开你的博客仓库 &lt;code&gt;https://github.com/你的用户名/myblog&lt;/code&gt;，进入：&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Settings&lt;/strong&gt; → 向下找到 &lt;strong&gt;Features&lt;/strong&gt; → 勾选 &lt;strong&gt;Discussions&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;保存后仓库顶部导航栏会出现 &lt;strong&gt;Discussions&lt;/strong&gt; 标签。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;二安装-giscus-app&#34;&gt;二、安装 Giscus App&lt;/h2&gt;&#xA;&lt;p&gt;访问 👉 &lt;a href=&#34;https://github.com/apps/giscus&#34;&gt;https://github.com/apps/giscus&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;点 &lt;strong&gt;Install&lt;/strong&gt; → 选择 &lt;strong&gt;Only select repositories&lt;/strong&gt; → 选你的博客仓库 → 确认安装。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;三获取配置参数&#34;&gt;三、获取配置参数&lt;/h2&gt;&#xA;&lt;p&gt;访问 👉 &lt;a href=&#34;https://giscus.app/zh-CN&#34;&gt;https://giscus.app/zh-CN&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;按如下填写：&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;选项&lt;/th&gt;&#xA;          &lt;th&gt;填写内容&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;仓库&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;你的用户名/myblog&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Discussion 分类&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;Announcements&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;页面 ↔ Discussion 映射&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;pathname&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;主题&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;preferred_color_scheme&lt;/code&gt;（跟随系统深浅色）&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;语言&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;zh-CN&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;填完后页面底部会自动生成一段 &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 代码，其中有两个关键值：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

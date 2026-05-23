@@ -14,6 +14,36 @@
             本站累计访问 <span id="busuanzi_value_site_pv"></span> 次 · 访客 <span id="busuanzi_value_site_uv"></span> 人
         </p>
         {{- end }}
+
+        <div class="contact-links">
+          <a href="mailto:shaifx@hotmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            shaifx@hotmail.com
+          </a>
+          <a href="https://gameflow.pages.dev/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
+            GameFlow 小游戏中心
+          </a>
+        </div>
+
+        <style>
+        .contact-links {
+          display: flex;
+          gap: 1.5rem;
+          margin-top: 0.8rem;
+          flex-wrap: wrap;
+        }
+        .contact-links a {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          font-size: 0.9rem;
+          opacity: 0.75;
+          text-decoration: none;
+          color: inherit;
+        }
+        .contact-links a:hover { opacity: 1; }
+        </style>
     </footer>
 </article>
 {{- end -}}

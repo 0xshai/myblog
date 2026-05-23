@@ -20,10 +20,6 @@ comments = true
 name = "email"
 url = "mailto:shaifx@hotmail.com"
 
-[[params.socialIcons]]
-name = "gamecontroller"
-url = "https://gameflow.pages.dev/"
-
 [params.giscus]
 repo = "0xshai/myblog"
 repoId = "R_kgDOSjif3g"
