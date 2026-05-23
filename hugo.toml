@@ -14,6 +14,20 @@ theme = "PaperMod"
   ShowCodeCopyButtons = true   # 代码块复制按钮
   ShowToc = true               # 文章目录
   TocOpen = false              # 目录默认折叠
+comments = true
+
+[params.giscus]
+repo = "0xshai/myblog"
+repoId = "R_kgDOSjif3g"
+category = "Announcements"
+categoryId = "DIC_kwDOSjif3s4C9qHd"
+mapping = "pathname"
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+theme = "preferred_color_scheme"
+lang = "zh-CN"
 
 [menu]
   [[menu.main]]
