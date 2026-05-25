@@ -14,27 +14,27 @@
         </p>
         {{- end }}
         <div class="contact-links">
+          <!-- GameFlow -->
+          <a href="https://gameflow.pages.dev/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4m-2-2v4"/><circle cx="16" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="19" cy="13" r="1" fill="currentColor" stroke="none"/></svg>
+            GameFlow 小游戏中心
+          </a>
+          <!-- 国际音标 -->
+          <a href="https://guojiyinbiao.pages.dev/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/><path d="M5 12h4"/><path d="M15 12c0 2.5 2 4 4 4"/><path d="M15 12c0-2 1.5-4 4-4"/></svg>
+            国际音标学习
+          </a>
+          <!-- Python学习 -->
+          <a href="https://pythonstudy.pages.dev/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.5-2 4-2 4s2.5-.5 4-2"/><path d="M12 12 8 8"/><path d="M20 4s-5 0-8 3L4 15l5 5 8-8c3-3 3-8 3-8z"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/></svg>
+            Python 星际编程
+          </a>
           <!-- 邮箱复制 -->
           <span class="copy-email" onclick="copyEmail()" title="点击复制邮箱">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             shaifx@hotmail.com
             <span class="copy-tip" id="copy-tip">已复制</span>
           </span>
-          <!-- GameFlow -->
-          <a href="https://gameflow.pages.dev/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
-            GameFlow 小游戏中心
-          </a>
-          <!-- 国际音标 -->
-          <a href="https://guojiyinbiao.pages.dev/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
-            国际音标学习
-          </a>
-          <!-- Python学习 -->
-          <a href="https://pythonstudy.pages.dev/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.477 2 6 6.477 6 8v2h6v1H6c-2.761 0-4 1.239-4 4v2c0 2.761 1.239 4 4 4h1v-3c0-1.657 1.343-3 3-3h4c1.105 0 2-.895 2-2V8c0-2.761-1.239-4-4-4h-2z"/><circle cx="9" cy="7" r="1" fill="currentColor"/><path d="M12 22c5.523 0 6-4.477 6-6v-2h-6v-1h6c2.761 0 4-1.239 4-4v-2"/><circle cx="15" cy="17" r="1" fill="currentColor"/></svg>
-            Python 星际编程
-          </a>
         </div>
         <style>
         .contact-links {
@@ -43,6 +43,10 @@
           margin-top: 0.8rem;
           flex-wrap: wrap;
           align-items: center;
+        }
+        .copy-email {
+          flex-basis: 100%;
+          margin-top: 0.25rem;
         }
         .contact-links a,
         .copy-email {
