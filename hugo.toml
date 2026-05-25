@@ -15,8 +15,8 @@ theme = "PaperMod"
   comments = true
 
   [params.homeInfoParams]
-    Title = "0xSHAI 👋"
-    Content = "> 写代码、做游戏、搞 AI、拥抱开源。\n>\n> 折腾是目的，开源是态度。"
+    Title = "SHAIFX 👋"
+    Content = "> 写代码、做游戏、搞AI、拥抱开源。\n>\n> 折腾是目的，开源是态度。"
 
   [params.giscus]
     repo = "0xshai/myblog"
