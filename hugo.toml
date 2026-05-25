@@ -1,11 +1,13 @@
 baseURL = "/"
 locale = "zh-CN"
-title = "SHAI的技术博客"
+title = "SHAIFX的技术博客"
 theme = "PaperMod"
 
 [params]
   # 首页模式：profile显示头像简介，index显示文章列表
-  homeInfoParams = {Title = "0xSHAI 👋", Content = "> 写代码、做游戏、搞 AI、拥抱开源。<br> 折腾是目的，开源是态度。"}
+  [params.homeInfoParams]
+  Title = "SHAIFX 👋"
+  Content = "> 写代码、做游戏、搞AI、拥抱开源。\n>\n> 折腾是目的，开源是态度。"
   defaultTheme = "auto"        # 自动跟随系统深色/浅色
   ShowReadingTime = true       # 阅读时间
   ShowShareButtons = false     # 分享按钮
@@ -15,10 +17,6 @@ theme = "PaperMod"
   ShowToc = true               # 文章目录
   TocOpen = false              # 目录默认折叠
 comments = true
-
-[[params.socialIcons]]
-name = "email"
-url = "mailto:shaifx@hotmail.com"
 
 [params.giscus]
 repo = "0xshai/myblog"

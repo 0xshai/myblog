@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Umami on SHAI的技术博客</title>
+    <title>Umami on SHAIFX的技术博客</title>
     <link>//localhost:1313/tags/umami/</link>
-    <description>Recent content in Umami on SHAI的技术博客</description>
+    <description>Recent content in Umami on SHAIFX的技术博客</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 21 May 2026 11:00:00 +0800</lastBuildDate>
@@ -13,7 +13,76 @@
       <link>//localhost:1313/posts/umami-busuanzi-analytics/</link>
       <pubDate>Thu, 21 May 2026 11:00:00 +0800</pubDate>
       <guid>//localhost:1313/posts/umami-busuanzi-analytics/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;一套给自己看，一套给访客看。用 Umami + 不蒜子为博客添加完整的访问统计。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;工具介绍&#34;&gt;工具介绍&lt;/h2&gt;&#xA;&lt;h3 id=&#34;umami&#34;&gt;Umami&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://umami.is&#34;&gt;Umami&lt;/a&gt; 是一款开源的网站统计工具，定位是 Google Analytics 的隐私友好替代品。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;开源&lt;/strong&gt;：代码完全公开，可自部署&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;隐私友好&lt;/strong&gt;：不使用 Cookie，不追踪个人信息，符合 GDPR&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;数据详细&lt;/strong&gt;：访客来源、设备类型、浏览器、停留时长、实时在线人数&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;免费版&lt;/strong&gt;：Umami Cloud 每月 10 万次页面浏览，个人博客完全够用&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;数据归属&lt;/strong&gt;：显示在后台，只有博主自己能看&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;适合用来了解博客的真实流量情况。&lt;/p&gt;&#xA;&lt;h3 id=&#34;不蒜子&#34;&gt;不蒜子&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://busuanzi.ibruce.info&#34;&gt;不蒜子&lt;/a&gt; 是一个极简的页面计数器，由国内开发者维护。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;接入极简&lt;/strong&gt;：两行代码搞定&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;免费无限制&lt;/strong&gt;：没有用量上限&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;双维度统计&lt;/strong&gt;：网站总访问量 + 单篇文章浏览量&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;数据公开&lt;/strong&gt;：数字直接显示在博客页面上，访客可见&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：不开源，数据存在作者服务器，部分广告拦截插件（如 Brave）会屏蔽&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;适合在博客页面直接展示浏览数字。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;两者的区别&#34;&gt;两者的区别&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;          &lt;th&gt;Umami&lt;/th&gt;&#xA;          &lt;th&gt;不蒜子&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;数据可见性&lt;/td&gt;&#xA;          &lt;td&gt;仅博主后台&lt;/td&gt;&#xA;          &lt;td&gt;页面公开显示&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;统计维度&lt;/td&gt;&#xA;          &lt;td&gt;详细（来源、设备等）&lt;/td&gt;&#xA;          &lt;td&gt;仅浏览次数&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;隐私&lt;/td&gt;&#xA;          &lt;td&gt;极佳&lt;/td&gt;&#xA;          &lt;td&gt;一般&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;接入难度&lt;/td&gt;&#xA;          &lt;td&gt;中&lt;/td&gt;&#xA;          &lt;td&gt;极简&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;开源&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;❌&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;两者互补，同时使用效果最好。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;一接入-umami-cloud&#34;&gt;一、接入 Umami Cloud&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-注册账号&#34;&gt;1. 注册账号&lt;/h3&gt;&#xA;&lt;p&gt;打开 &lt;a href=&#34;https://umami.is&#34;&gt;umami.is&lt;/a&gt;，点 &lt;strong&gt;Sign up&lt;/strong&gt; 注册，选择数据存储地区（推荐 United States）。&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-添加网站&#34;&gt;2. 添加网站&lt;/h3&gt;&#xA;&lt;p&gt;登录后进入 &lt;strong&gt;Settings&lt;/strong&gt; → &lt;strong&gt;Websites&lt;/strong&gt; → &lt;strong&gt;Add website&lt;/strong&gt;：&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;一套给自己看，一套给访客看。用 Umami + 不蒜子为博客添加完整的访问统计。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;工具介绍&#34;&gt;工具介绍&lt;/h2&gt;
+&lt;h3 id=&#34;umami&#34;&gt;Umami&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://umami.is&#34;&gt;Umami&lt;/a&gt; 是一款开源的网站统计工具，定位是 Google Analytics 的隐私友好替代品。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;开源&lt;/strong&gt;：代码完全公开，可自部署&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;隐私友好&lt;/strong&gt;：不使用 Cookie，不追踪个人信息，符合 GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据详细&lt;/strong&gt;：访客来源、设备类型、浏览器、停留时长、实时在线人数&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;免费版&lt;/strong&gt;：Umami Cloud 每月 10 万次页面浏览，个人博客完全够用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据归属&lt;/strong&gt;：显示在后台，只有博主自己能看&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;适合用来了解博客的真实流量情况。&lt;/p&gt;
+&lt;h3 id=&#34;不蒜子&#34;&gt;不蒜子&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://busuanzi.ibruce.info&#34;&gt;不蒜子&lt;/a&gt; 是一个极简的页面计数器，由国内开发者维护。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;接入极简&lt;/strong&gt;：两行代码搞定&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;免费无限制&lt;/strong&gt;：没有用量上限&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;双维度统计&lt;/strong&gt;：网站总访问量 + 单篇文章浏览量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据公开&lt;/strong&gt;：数字直接显示在博客页面上，访客可见&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：不开源，数据存在作者服务器，部分广告拦截插件（如 Brave）会屏蔽&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;适合在博客页面直接展示浏览数字。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;两者的区别&#34;&gt;两者的区别&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;Umami&lt;/th&gt;
+          &lt;th&gt;不蒜子&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;数据可见性&lt;/td&gt;
+          &lt;td&gt;仅博主后台&lt;/td&gt;
+          &lt;td&gt;页面公开显示&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;统计维度&lt;/td&gt;
+          &lt;td&gt;详细（来源、设备等）&lt;/td&gt;
+          &lt;td&gt;仅浏览次数&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;隐私&lt;/td&gt;
+          &lt;td&gt;极佳&lt;/td&gt;
+          &lt;td&gt;一般&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;接入难度&lt;/td&gt;
+          &lt;td&gt;中&lt;/td&gt;
+          &lt;td&gt;极简&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;开源&lt;/td&gt;
+          &lt;td&gt;✅&lt;/td&gt;
+          &lt;td&gt;❌&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;两者互补，同时使用效果最好。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一接入-umami-cloud&#34;&gt;一、接入 Umami Cloud&lt;/h2&gt;
+&lt;h3 id=&#34;1-注册账号&#34;&gt;1. 注册账号&lt;/h3&gt;
+&lt;p&gt;打开 &lt;a href=&#34;https://umami.is&#34;&gt;umami.is&lt;/a&gt;，点 &lt;strong&gt;Sign up&lt;/strong&gt; 注册，选择数据存储地区（推荐 United States）。&lt;/p&gt;
+&lt;h3 id=&#34;2-添加网站&#34;&gt;2. 添加网站&lt;/h3&gt;
+&lt;p&gt;登录后进入 &lt;strong&gt;Settings&lt;/strong&gt; → &lt;strong&gt;Websites&lt;/strong&gt; → &lt;strong&gt;Add website&lt;/strong&gt;：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
