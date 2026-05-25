@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>建站 | SHAIFX的技术博客</title>
+<title>书签 | SHAIFX的技术博客</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="书签 - SHAIFX的技术博客">
 <meta name="author" content="">
-<link rel="canonical" href="//localhost:1313/tags/%E5%BB%BA%E7%AB%99/">
+<link rel="canonical" href="//localhost:1313/bookmark/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
@@ -18,8 +18,7 @@
 <link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="//localhost:1313/tags/%E5%BB%BA%E7%AB%99/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="//localhost:1313/tags/%E5%BB%BA%E7%AB%99/">
+<link rel="alternate" hreflang="en" href="//localhost:1313/bookmark/">
 <noscript>
     <style>
         #theme-toggle,
@@ -69,7 +68,7 @@
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
@@ -115,7 +114,7 @@
             </li>
             <li>
                 <a href="//localhost:1313/bookmark/" title="书签">
-                    <span>书签</span>
+                    <span class="active">书签</span>
                 </a>
             </li>
             <li>
@@ -126,83 +125,124 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
-            <a href="/">Home</a>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-                <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <a href="/tags/">Tags</a>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-        <polyline points="9 18 15 12 9 6"></polyline>
-    </svg>
-</nav>
-  <h1>
-    建站
-  </h1>
-</header>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">为博客添加评论区：Giscus
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 基于 GitHub Discussions 的免费评论系统，数据在自己手里，零成本接入 Hugo PaperMod。
-为什么选 Giscus 给静态博客加评论的方案不少，常见的有 Disqus、Valine、Waline、Giscus 等。
-Giscus 的优势：
-免费：完全免费，无广告 数据自托管：评论存在你自己的 GitHub 仓库 Discussions 里，不依赖第三方服务器 无需单独注册：访客用 GitHub 账号登录即可留言 隐私友好：不追踪用户，不植入 Cookie PaperMod 原生支持：无需改模板，配置几行 toml 即可 唯一限制：访客需要有 GitHub 账号才能评论，适合技术类博客。
-一、开启仓库 Discussions 打开你的博客仓库 https://github.com/你的用户名/myblog，进入：
-Settings → 向下找到 Features → 勾选 Discussions
-保存后仓库顶部导航栏会出现 Discussions 标签。
-二、安装 Giscus App 访问 👉 https://github.com/apps/giscus
-点 Install → 选择 Only select repositories → 选你的博客仓库 → 确认安装。
-三、获取配置参数 访问 👉 https://giscus.app/zh-CN
-按如下填写：
-选项 填写内容 仓库 你的用户名/myblog Discussion 分类 Announcements 页面 ↔ Discussion 映射 pathname 主题 preferred_color_scheme（跟随系统深浅色） 语言 zh-CN 填完后页面底部会自动生成一段 &lt;script&gt; 代码，其中有两个关键值：
-...</p>
+<main class="main">
+<div class="bookmark-page">
+  <h1 class="bookmark-title">🔖 书签</h1>
+  <p class="bookmark-desc">收藏的好工具和常用网站</p>
+  <div class="bm-section">
+    <h2 class="bm-category">🦁 浏览器</h2>
+    <div class="bm-grid">
+      <a href="https://brave.com/zh/" target="_blank" rel="noopener" class="bm-card">
+        <div class="bm-info">
+          <div class="bm-name">Brave</div>
+          <div class="bm-desc">注重隐私的现代浏览器</div>
+        </div>
+        <svg class="bm-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
   </div>
-  <footer class="entry-footer"><span title='2026-05-23 10:00:00 +0800 CST'>May 23, 2026</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to 为博客添加评论区：Giscus" href="//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">为博客添加访问统计：Umami &#43; 不蒜子
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 一套给自己看，一套给访客看。用 Umami &#43; 不蒜子为博客添加完整的访问统计。
-工具介绍 Umami Umami 是一款开源的网站统计工具，定位是 Google Analytics 的隐私友好替代品。
-开源：代码完全公开，可自部署 隐私友好：不使用 Cookie，不追踪个人信息，符合 GDPR 数据详细：访客来源、设备类型、浏览器、停留时长、实时在线人数 免费版：Umami Cloud 每月 10 万次页面浏览，个人博客完全够用 数据归属：显示在后台，只有博主自己能看 适合用来了解博客的真实流量情况。
-不蒜子 不蒜子 是一个极简的页面计数器，由国内开发者维护。
-接入极简：两行代码搞定 免费无限制：没有用量上限 双维度统计：网站总访问量 &#43; 单篇文章浏览量 数据公开：数字直接显示在博客页面上，访客可见 缺点：不开源，数据存在作者服务器，部分广告拦截插件（如 Brave）会屏蔽 适合在博客页面直接展示浏览数字。
-两者的区别 Umami 不蒜子 数据可见性 仅博主后台 页面公开显示 统计维度 详细（来源、设备等） 仅浏览次数 隐私 极佳 一般 接入难度 中 极简 开源 ✅ ❌ 两者互补，同时使用效果最好。
-一、接入 Umami Cloud 1. 注册账号 打开 umami.is，点 Sign up 注册，选择数据存储地区（推荐 United States）。
-2. 添加网站 登录后进入 Settings → Websites → Add website：
-...</p>
+  <div class="bm-section">
+    <h2 class="bm-category">🎨 图像处理</h2>
+    <div class="bm-grid">
+      <a href="https://arcbrush.com/" target="_blank" rel="noopener" class="bm-card">
+        <div class="bm-info">
+          <div class="bm-name">ArcBrush</div>
+          <div class="bm-desc">节点式修图工具</div>
+        </div>
+        <svg class="bm-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
   </div>
-  <footer class="entry-footer"><span title='2026-05-21 11:00:00 +0800 CST'>May 21, 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
-  <a class="entry-link" aria-label="post link to 为博客添加访问统计：Umami &#43; 不蒜子" href="//localhost:1313/posts/umami-busuanzi-analytics/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">用 Hugo &#43; Cloudflare Pages 搭建个人博客
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 零成本、全静态、自动部署。用 Hugo 搭建个人博客并托管到 Cloudflare Pages 的完整流程。
-准备工作 安装以下工具，并注册好账号：
-Git Hugo（Windows 用 winget install Hugo.Hugo.Extended） GitHub 账号 Cloudflare 账号 一、创建站点 hugo new site myblog cd myblog git init 二、安装 PaperMod 主题 git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod 三、配置 hugo.toml 用以下内容替换根目录的 hugo.toml：
-baseURL = &#34;/&#34; locale = &#34;zh-CN&#34; title = &#34;我的博客&#34; theme = &#34;PaperMod&#34; [params] homeInfoParams = {Title = &#34;你好 👋&#34;, Content = &#34;欢迎来到我的博客&#34;} defaultTheme = &#34;auto&#34; ShowReadingTime = true ShowPostNavLinks = true ShowBreadCrumbs = true ShowCodeCopyButtons = true ShowToc = true [menu] [[menu.main]] name = &#34;文章&#34; url = &#34;/posts/&#34; weight = 1 [[menu.main]] name = &#34;标签&#34; url = &#34;/tags/&#34; weight = 2 [[menu.main]] name = &#34;归档&#34; url = &#34;/archives/&#34; weight = 3 [outputs] home = [&#34;HTML&#34;, &#34;RSS&#34;, &#34;JSON&#34;] 四、创建归档页 hugo new content archives.md 打开文件，内容替换为：
-...</p>
+  <div class="bm-section">
+    <h2 class="bm-category">⬇️ 下载工具</h2>
+    <div class="bm-grid">
+      <a href="https://motrix-next.pages.dev/#" target="_blank" rel="noopener" class="bm-card">
+        <div class="bm-info">
+          <div class="bm-name">MotrixNext</div>
+          <div class="bm-desc">全能下载管理器</div>
+        </div>
+        <svg class="bm-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
   </div>
-  <footer class="entry-footer"><span title='2026-05-21 10:39:29 +0800 CST'>May 21, 2026</span>&nbsp;·&nbsp;<span>2 min</span></footer>
-  <a class="entry-link" aria-label="post link to 用 Hugo &#43; Cloudflare Pages 搭建个人博客" href="//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"></a>
-</article>
+  <div class="bm-section">
+    <h2 class="bm-category">⌨️ 输入法</h2>
+    <div class="bm-grid">
+      <a href="https://huanfeng.github.io/WindInput/" target="_blank" rel="noopener" class="bm-card">
+        <div class="bm-info">
+          <div class="bm-name">清风输入法</div>
+          <div class="bm-desc">简洁轻量的输入法</div>
+        </div>
+        <svg class="bm-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+.bookmark-page { max-width: 800px; }
+.bookmark-title { font-size: 1.8rem; margin-bottom: 0.4rem; }
+.bookmark-desc { color: var(--secondary); font-size: 0.95rem; margin-bottom: 2rem; }
+.bm-section { margin-bottom: 2rem; }
+.bm-category {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+.bm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+.bm-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s;
+}
+.bm-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.bm-info { flex: 1; min-width: 0; }
+.bm-name {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bm-desc {
+  font-size: 0.78rem;
+  color: var(--secondary);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bm-arrow {
+  color: var(--secondary);
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.bm-card:hover .bm-arrow { opacity: 1; }
+@media (max-width: 600px) {
+  .bm-grid { grid-template-columns: 1fr; }
+}
+</style>
     </main>
     
 <footer class="footer">
@@ -285,6 +325,53 @@ baseURL = &#34;/&#34; locale = &#34;zh-CN&#34; title = &#34;我的博客&#34; th
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

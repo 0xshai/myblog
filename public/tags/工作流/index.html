@@ -114,6 +114,11 @@
                 </a>
             </li>
             <li>
+                <a href="//localhost:1313/bookmark/" title="书签">
+                    <span>书签</span>
+                </a>
+            </li>
+            <li>
                 <a href="//localhost:1313/about/" title="About">
                     <span>About</span>
                 </a>
@@ -122,7 +127,18 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header">
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/tags/">Tags</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
   <h1>
     工作流
   </h1>
@@ -146,7 +162,7 @@ git add . git commit -m &#34;描述这次改了什么&#34; git push 核心习惯
 方法一：commit 信息加 [skip ci] git commit -m &#34;调整样式 [skip ci]&#34; Cloudflare 识别到这个关键词会自动跳过本次构建，灵活控制每次 push 是否部署。
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-05-25 00:00:00 +0000 UTC'>May 25, 2026</span></footer>
+  <footer class="entry-footer"><span title='2026-05-25 00:00:00 +0000 UTC'>May 25, 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
   <a class="entry-link" aria-label="post link to 多台电脑协作开发：GitHub 同步工作流指南" href="//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/"></a>
 </article>
     </main>

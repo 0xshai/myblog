@@ -113,6 +113,11 @@
                 </a>
             </li>
             <li>
+                <a href="//localhost:1313/bookmark/" title="书签">
+                    <span>书签</span>
+                </a>
+            </li>
+            <li>
                 <a href="//localhost:1313/about/" title="About">
                     <span class="active">About</span>
                 </a>
@@ -124,14 +129,21 @@
 
 <article class="post-single">
   <header class="post-header">
-    
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
     <h1 class="post-title entry-hint-parent">
       About
     </h1>
-    <div class="post-meta">
+    <div class="post-meta"><span>1 min · 浏览 <span id="busuanzi_value_page_pv"></span> 次</span>
 
 </div>
   </header> 
+
   <div class="post-content md-content"><p>探索 Web 与系统的边界 — 涉猎 HTML / CSS / Hugo / Python / Go，以及一切值得折腾的技术。</p>
 
 
@@ -140,7 +152,22 @@
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
-  </footer>
+
+  </footer><script src="https://giscus.app/client.js"
+        data-repo="0xshai/myblog"
+        data-repo-id="R_kgDOSjif3g"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOSjif3s4C9qHd"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 </article>
     </main>
     
@@ -224,6 +251,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

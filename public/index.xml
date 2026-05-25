@@ -164,5 +164,12 @@
       <guid>//localhost:1313/about/</guid>
       <description>&lt;p&gt;探索 Web 与系统的边界 — 涉猎 HTML / CSS / Hugo / Python / Go，以及一切值得折腾的技术。&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>书签</title>
+      <link>//localhost:1313/bookmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/bookmark/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

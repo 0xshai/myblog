@@ -1,0 +1,27 @@
+- category: 浏览器
+  icon: 🦁
+  items:
+    - name: Brave
+      url: https://brave.com/zh/
+      desc: 注重隐私的现代浏览器
+
+- category: 图像处理
+  icon: 🎨
+  items:
+    - name: ArcBrush
+      url: https://arcbrush.com/
+      desc: 节点式修图工具
+
+- category: 下载工具
+  icon: ⬇️
+  items:
+    - name: MotrixNext
+      url: https://motrix-next.pages.dev/#
+      desc: 全能下载管理器
+
+- category: 输入法
+  icon: ⌨️
+  items:
+    - name: 清风输入法
+      url: https://huanfeng.github.io/WindInput/
+      desc: 简洁轻量的输入法

@@ -57,6 +57,8 @@
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
+    <loc>//localhost:1313/bookmark/</loc>
+  </url><url>
     <loc>//localhost:1313/archives/</loc>
   </url>
 </urlset>
