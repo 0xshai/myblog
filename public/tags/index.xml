@@ -16,6 +16,13 @@
       <description></description>
     </item>
     <item>
+      <title>Git</title>
+      <link>//localhost:1313/tags/git/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>GitHub</title>
       <link>//localhost:1313/tags/github/</link>
       <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
@@ -27,6 +34,20 @@
       <link>//localhost:1313/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
       <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>工具</title>
+      <link>//localhost:1313/tags/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>开发效率</title>
+      <link>//localhost:1313/tags/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/</guid>
       <description></description>
     </item>
     <item>

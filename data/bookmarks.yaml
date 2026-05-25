@@ -1,9 +1,30 @@
+- category: 编程工具
+  icon: 🛠️
+  items:
+    - name: Zed
+      url: https://zed.dev/
+      desc: 轻量极速的现代代码编辑器
+      opensource: true
+    - name: Tabby
+      url: https://tabby.sh/
+      desc: 好看的跨平台终端工具
+      opensource: true
+    - name: Lazygit
+      url: https://github.com/jesseduffield/lazygit
+      desc: 终端里的 Git 可视化工具
+      opensource: true
+
 - category: 浏览器
   icon: 🦁
   items:
     - name: Brave
       url: https://brave.com/zh/
       desc: 注重隐私的现代浏览器
+      opensource: true
+    - name: Zen Browser
+      url: https://zen-browser.app
+      desc: 极简界面的 Firefox 内核浏览器
+      opensource: true
 
 - category: 图像处理
   icon: 🎨
@@ -18,6 +39,7 @@
     - name: MotrixNext
       url: https://motrix-next.pages.dev/#
       desc: 全能下载管理器
+      opensource: true
 
 - category: 输入法
   icon: ⌨️
@@ -25,3 +47,18 @@
     - name: 清风输入法
       url: https://huanfeng.github.io/WindInput/
       desc: 简洁轻量的输入法
+      opensource: true
+
+- category: 笔记
+  icon: 📝
+  items:
+    - name: Obsidian
+      url: https://obsidian.md
+      desc: 本地 Markdown 笔记，数据不上云
+    - name: Standard Notes
+      url: https://standardnotes.com
+      desc: 端对端加密，注重隐私的笔记应用
+      opensource: true
+    - name: Simplenote
+      url: https://simplenote.com
+      desc: 极简轻量的跨平台笔记

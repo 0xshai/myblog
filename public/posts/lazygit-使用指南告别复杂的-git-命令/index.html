@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>多台电脑协作开发：GitHub 同步工作流指南 | SHAIFX的技术博客</title>
-<meta name="keywords" content="GitHub, Cloudflare, 工作流">
-<meta name="description" content="如何在多台电脑间同步代码，以及控制 Cloudflare Pages 自动部署的实用技巧。">
+<title>Lazygit 使用指南：告别复杂的 Git 命令 | SHAIFX的技术博客</title>
+<meta name="keywords" content="Git, 工具, 开发效率">
+<meta name="description" content="用 Lazygit 可视化管理 Git，暂存、提交、推送全程键盘操作，再也不用记复杂命令。">
 <meta name="author" content="">
-<link rel="canonical" href="//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
+<link rel="canonical" href="//localhost:1313/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
 <link rel="icon" href="//localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
 <noscript>
     <style>
         #theme-toggle,
@@ -142,12 +142,12 @@
     </svg>
 </nav>
     <h1 class="post-title entry-hint-parent">
-      多台电脑协作开发：GitHub 同步工作流指南
+      Lazygit 使用指南：告别复杂的 Git 命令
     </h1>
     <div class="post-description">
-      如何在多台电脑间同步代码，以及控制 Cloudflare Pages 自动部署的实用技巧。
+      用 Lazygit 可视化管理 Git，暂存、提交、推送全程键盘操作，再也不用记复杂命令。
     </div>
-    <div class="post-meta"><span title='2026-05-25 00:00:00 +0000 UTC'>May 25, 2026</span>&nbsp;·&nbsp;<span>1 min · 浏览 <span id="busuanzi_value_page_pv"></span> 次</span>
+    <div class="post-meta"><span title='2026-05-25 00:00:00 +0000 UTC'>May 25, 2026</span>&nbsp;·&nbsp;<span>2 min · 浏览 <span id="busuanzi_value_page_pv"></span> 次</span>
 
 </div>
   </header> <details class="toc" >
@@ -157,106 +157,179 @@
 
     <div class="inner"><ul>
             <li>
-                <a href="#%e4%b8%80%e6%8d%a2%e4%ba%86%e6%96%b0%e7%94%b5%e8%84%91%e5%a6%82%e4%bd%95%e6%8b%bf%e5%88%b0%e4%bb%a3%e7%a0%81" aria-label="一、换了新电脑，如何拿到代码">一、换了新电脑，如何拿到代码</a></li>
+                <a href="#%e4%bb%80%e4%b9%88%e6%98%af-lazygit" aria-label="什么是 Lazygit">什么是 Lazygit</a></li>
             <li>
-                <a href="#%e4%ba%8c%e6%af%8f%e6%ac%a1%e5%bc%80%e5%a7%8b%e5%92%8c%e7%bb%93%e6%9d%9f%e5%b7%a5%e4%bd%9c%e7%9a%84%e4%b9%a0%e6%83%af" aria-label="二、每次开始和结束工作的习惯">二、每次开始和结束工作的习惯</a></li>
+                <a href="#%e5%ae%89%e8%a3%85" aria-label="安装">安装</a></li>
             <li>
-                <a href="#%e4%b8%89%e5%a6%82%e4%bd%95%e6%8e%a7%e5%88%b6-cloudflare-pages-%e8%87%aa%e5%8a%a8%e9%83%a8%e7%bd%b2" aria-label="三、如何控制 Cloudflare Pages 自动部署">三、如何控制 Cloudflare Pages 自动部署</a><ul>
+                <a href="#%e6%89%93%e5%bc%80%e6%96%b9%e5%bc%8f" aria-label="打开方式">打开方式</a></li>
+            <li>
+                <a href="#%e7%95%8c%e9%9d%a2%e8%af%b4%e6%98%8e" aria-label="界面说明">界面说明</a></li>
+            <li>
+                <a href="#%e6%97%a5%e5%b8%b8%e6%8e%a8%e9%80%81%e6%b5%81%e7%a8%8b" aria-label="日常推送流程">日常推送流程</a><ul>
                     
             <li>
-                <a href="#%e6%96%b9%e6%b3%95%e4%b8%80commit-%e4%bf%a1%e6%81%af%e5%8a%a0-skip-ci" aria-label="方法一：commit 信息加 [skip ci]">方法一：commit 信息加 [skip ci]</a></li>
+                <a href="#%e7%ac%ac%e4%b8%80%e6%ad%a5%e6%9f%a5%e7%9c%8b%e6%94%b9%e5%8a%a8%e6%96%87%e4%bb%b6" aria-label="第一步：查看改动文件">第一步：查看改动文件</a></li>
             <li>
-                <a href="#%e6%96%b9%e6%b3%95%e4%ba%8c%e5%85%b3%e9%97%ad%e8%87%aa%e5%8a%a8%e9%83%a8%e7%bd%b2" aria-label="方法二：关闭自动部署">方法二：关闭自动部署</a></li></ul>
+                <a href="#%e7%ac%ac%e4%ba%8c%e6%ad%a5%e6%9a%82%e5%ad%98%e6%96%87%e4%bb%b6" aria-label="第二步：暂存文件">第二步：暂存文件</a></li>
+            <li>
+                <a href="#%e7%ac%ac%e4%b8%89%e6%ad%a5%e5%86%99%e6%8f%90%e4%ba%a4%e4%bf%a1%e6%81%af%e5%b9%b6%e6%8f%90%e4%ba%a4" aria-label="第三步：写提交信息并提交">第三步：写提交信息并提交</a></li>
+            <li>
+                <a href="#%e7%ac%ac%e5%9b%9b%e6%ad%a5%e6%8e%a8%e9%80%81%e5%88%b0-github" aria-label="第四步：推送到 GitHub">第四步：推送到 GitHub</a></li></ul>
             </li>
             <li>
-                <a href="#%e5%9b%9b%e6%b2%a1%e6%9c%89%e9%83%a8%e7%bd%b2%e6%97%b6%e5%a6%82%e4%bd%95%e6%9c%ac%e5%9c%b0%e9%a2%84%e8%a7%88" aria-label="四、没有部署时如何本地预览">四、没有部署时如何本地预览</a><ul>
-                    
+                <a href="#%e5%b8%b8%e7%94%a8%e5%bf%ab%e6%8d%b7%e9%94%ae" aria-label="常用快捷键">常用快捷键</a></li>
             <li>
-                <a href="#%e6%96%b9%e6%b3%95%e4%b8%80hugo-server%e6%9c%80%e5%b8%b8%e7%94%a8" aria-label="方法一：hugo server（最常用）">方法一：hugo server（最常用）</a></li>
+                <a href="#%e6%9f%a5%e7%9c%8b%e6%8f%90%e4%ba%a4%e5%8e%86%e5%8f%b2%e5%92%8c%e5%9b%9e%e6%bb%9a" aria-label="查看提交历史和回滚">查看提交历史和回滚</a></li>
             <li>
-                <a href="#%e6%96%b9%e6%b3%95%e4%ba%8ccloudflare-%e9%a2%84%e8%a7%88%e9%93%be%e6%8e%a5" aria-label="方法二：Cloudflare 预览链接">方法二：Cloudflare 预览链接</a></li></ul>
-            </li>
+                <a href="#%e6%8b%89%e5%8f%96%e6%9c%80%e6%96%b0%e4%bb%a3%e7%a0%81" aria-label="拉取最新代码">拉取最新代码</a></li>
             <li>
-                <a href="#%e4%ba%94%e5%ae%8c%e6%95%b4%e5%b7%a5%e4%bd%9c%e6%b5%81%e6%80%bb%e7%bb%93" aria-label="五、完整工作流总结">五、完整工作流总结</a>
+                <a href="#%e5%b0%8f%e7%bb%93" aria-label="小结">小结</a>
             </li>
         </ul>
     </div>
 </details>
 
-  <div class="post-content md-content"><p>在用 GitHub + Cloudflare Pages 管理博客时，经常需要在不同电脑上切换开发。
-本文整理了多设备协作的完整工作流，以及如何控制 Cloudflare 自动部署。</p>
-<h2 id="一换了新电脑如何拿到代码">一、换了新电脑，如何拿到代码<a hidden class="anchor" aria-hidden="true" href="#一换了新电脑如何拿到代码">#</a></h2>
-<p>每次在新电脑上第一次工作，需要把仓库克隆到本地：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/你的用户名/myblog.git
-</span></span><span style="display:flex;"><span>cd myblog
-</span></span><span style="display:flex;"><span>npm install
-</span></span></code></pre></div><p>三行命令搞定——代码拉下来，依赖自动安装，直接可以开发。</p>
-<p><code>npm install</code> 会根据 <code>package.json</code> 重新下载所有依赖包，和原来完全一致，
-所以 <code>node_modules/</code> 不需要上传到 GitHub，换电脑也不影响。</p>
-<h2 id="二每次开始和结束工作的习惯">二、每次开始和结束工作的习惯<a hidden class="anchor" aria-hidden="true" href="#二每次开始和结束工作的习惯">#</a></h2>
-<p><strong>开始工作前，先同步最新代码：</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull
-</span></span></code></pre></div><p>把另一台电脑推上去的改动拉下来，保持两台电脑代码一致。</p>
-<p><strong>工作结束后，推送到 GitHub：</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;描述这次改了什么&#34;</span>
-</span></span><span style="display:flex;"><span>git push
-</span></span></code></pre></div><p>核心习惯：<strong>每次开始先 pull，每次结束后 push。</strong>
-养成这个习惯，多台电脑之间永远不会出现代码冲突。</p>
-<h2 id="三如何控制-cloudflare-pages-自动部署">三、如何控制 Cloudflare Pages 自动部署<a hidden class="anchor" aria-hidden="true" href="#三如何控制-cloudflare-pages-自动部署">#</a></h2>
-<p>默认情况下每次 push 都会触发 Cloudflare 构建，免费版每月 500 次。
-频繁调试时容易浪费额度，有两种方式控制。</p>
-<h3 id="方法一commit-信息加-skip-ci">方法一：commit 信息加 [skip ci]<a hidden class="anchor" aria-hidden="true" href="#方法一commit-信息加-skip-ci">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;调整样式 [skip ci]&#34;</span>
-</span></span></code></pre></div><p>Cloudflare 识别到这个关键词会自动跳过本次构建，灵活控制每次 push 是否部署。</p>
-<h3 id="方法二关闭自动部署">方法二：关闭自动部署<a hidden class="anchor" aria-hidden="true" href="#方法二关闭自动部署">#</a></h3>
-<p>进入 Cloudflare Pages 后台：</p>
-<pre tabindex="0"><code>Settings → Builds &amp; deployments → Branch control
-</code></pre><p>把 Production branch 的自动部署关掉，之后所有 push 都不触发构建，
-需要发布时手动去 Deployments → Create deployment 触发。</p>
-<p><strong>推荐方式：</strong> 两种方法结合——平时调试用 [skip ci] 跳过，
-确认要上线的 commit 正常写，让自动部署触发。</p>
-<h2 id="四没有部署时如何本地预览">四、没有部署时如何本地预览<a hidden class="anchor" aria-hidden="true" href="#四没有部署时如何本地预览">#</a></h2>
-<h3 id="方法一hugo-server最常用">方法一：hugo server（最常用）<a hidden class="anchor" aria-hidden="true" href="#方法一hugo-server最常用">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
-</span></span></code></pre></div><p>打开 <code>http://localhost:1313</code> 实时预览，改动文件后页面自动刷新，
-不需要构建也不需要部署，是最快的开发方式。</p>
-<h3 id="方法二cloudflare-预览链接">方法二：Cloudflare 预览链接<a hidden class="anchor" aria-hidden="true" href="#方法二cloudflare-预览链接">#</a></h3>
-<p>每次 push 到 GitHub，Cloudflare Pages 会生成一个独立的预览链接：</p>
-<pre tabindex="0"><code>https://[commit-hash].shaifx.pages.dev
-</code></pre><p>不影响正式域名，专门用来预览测试。</p>
-<h2 id="五完整工作流总结">五、完整工作流总结<a hidden class="anchor" aria-hidden="true" href="#五完整工作流总结">#</a></h2>
-<p><strong>换新电脑？先运行：</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/你的用户名/myblog.git
-</span></span><span style="display:flex;"><span>cd myblog
-</span></span><span style="display:flex;"><span>npm install
-</span></span></code></pre></div><p><strong>每天开始工作：</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull       <span style="color:#75715e"># 同步最新代码</span>
-</span></span><span style="display:flex;"><span>hugo server    <span style="color:#75715e"># 本地预览</span>
-</span></span></code></pre></div><p><strong>改完代码，还在调试：</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add . <span style="color:#f92672">&amp;&amp;</span> git commit -m <span style="color:#e6db74">&#34;xxx [skip ci]&#34;</span> <span style="color:#f92672">&amp;&amp;</span> git push
-</span></span></code></pre></div><p><strong>改完代码，准备上线：</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add . <span style="color:#f92672">&amp;&amp;</span> git commit -m <span style="color:#e6db74">&#34;xxx&#34;</span> <span style="color:#f92672">&amp;&amp;</span> git push
-</span></span></code></pre></div><p>本地预览速度最快，改完立刻看到结果。
-确认没问题再正式 push，既节省构建次数，也避免把半成品推到线上。</p>
+  <div class="post-content md-content"><p>每次用 Git 都要输一堆命令？<code>git add .</code>、<code>git commit -m</code>、<code>git push</code>……
+Lazygit 把这些操作变成可视化界面，全程键盘操作，直观又高效。</p>
+<h2 id="什么是-lazygit">什么是 Lazygit<a hidden class="anchor" aria-hidden="true" href="#什么是-lazygit">#</a></h2>
+<p>Lazygit 是一个运行在终端里的 Git 可视化工具，开源免费。
+界面分为几个区域，左边显示文件改动、分支、提交历史，右边预览具体内容。</p>
+<p>核心优势：</p>
+<ul>
+<li>不用记 Git 命令，按键提示全在底部</li>
+<li>提交前能清楚看到每个文件改了哪几行</li>
+<li>回滚历史版本只需几个按键</li>
+<li>比 Git 命令行快很多</li>
+</ul>
+<h2 id="安装">安装<a hidden class="anchor" aria-hidden="true" href="#安装">#</a></h2>
+<p>去 GitHub 下载最新版：</p>
+<pre tabindex="0"><code>https://github.com/jesseduffield/lazygit/releases/latest
+</code></pre><p>Windows 下载 <code>lazygit_x.x.x_windows_x86_64.zip</code>，解压后把 <code>lazygit.exe</code> 放到一个固定目录，比如 <code>C:\tools\</code>。</p>
+<p>然后把这个目录加入系统环境变量 PATH：</p>
+<ol>
+<li><code>Win + S</code> 搜索 <strong>Environment Variables</strong></li>
+<li>点 <strong>Edit the system environment variables</strong></li>
+<li>右下角点 <strong>Environment Variables</strong></li>
+<li>上半部分 User variables 找到 <strong>Path</strong> → Edit → New</li>
+<li>填入 <code>C:\tools</code>，确定保存</li>
+<li>重启终端</li>
+</ol>
+<p>之后在终端输入 <code>lazygit</code> 就能直接启动。</p>
+<h2 id="打开方式">打开方式<a hidden class="anchor" aria-hidden="true" href="#打开方式">#</a></h2>
+<p>每次使用前，先在终端进入你的项目目录：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd D:<span style="color:#ae81ff">\c</span>ode<span style="color:#ae81ff">\m</span>yblog
+</span></span><span style="display:flex;"><span>lazygit
+</span></span></code></pre></div><h2 id="界面说明">界面说明<a hidden class="anchor" aria-hidden="true" href="#界面说明">#</a></h2>
+<p>打开后界面分为五个区域：</p>
+<pre tabindex="0"><code>[1] Status     — 当前仓库状态
+[2] Files      — 改动的文件列表
+[3] Branches   — 本地和远程分支
+[4] Commits    — 提交历史
+[5] Stash      — 临时储藏区
+</code></pre><p>按数字键 <code>1</code>~<code>5</code> 快速切换到对应区域，按 <code>Tab</code> 在区域间循环切换。</p>
+<h2 id="日常推送流程">日常推送流程<a hidden class="anchor" aria-hidden="true" href="#日常推送流程">#</a></h2>
+<h3 id="第一步查看改动文件">第一步：查看改动文件<a hidden class="anchor" aria-hidden="true" href="#第一步查看改动文件">#</a></h3>
+<p>打开 Lazygit 后，左边第 2 栏 <strong>Files</strong> 会显示所有改动的文件：</p>
+<ul>
+<li>红色 <code>??</code> — 新文件，还没被 Git 追踪</li>
+<li>红色 <code>M</code> — 已有文件被修改</li>
+<li>绿色 — 已暂存，准备提交</li>
+</ul>
+<h3 id="第二步暂存文件">第二步：暂存文件<a hidden class="anchor" aria-hidden="true" href="#第二步暂存文件">#</a></h3>
+<pre tabindex="0"><code>a         暂存全部文件
+空格      暂存光标所在的单个文件
+</code></pre><p>暂存后文件变成绿色。</p>
+<h3 id="第三步写提交信息并提交">第三步：写提交信息并提交<a hidden class="anchor" aria-hidden="true" href="#第三步写提交信息并提交">#</a></h3>
+<pre tabindex="0"><code>c         打开提交信息输入框
+</code></pre><p>输入本次改动的描述，比如 <code>add bookmark page</code>，回车确认提交。</p>
+<h3 id="第四步推送到-github">第四步：推送到 GitHub<a hidden class="anchor" aria-hidden="true" href="#第四步推送到-github">#</a></h3>
+<pre tabindex="0"><code>P（大写）  推送到远程仓库
+</code></pre><p>推送成功后底部会显示确认信息。</p>
+<h2 id="常用快捷键">常用快捷键<a hidden class="anchor" aria-hidden="true" href="#常用快捷键">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>按键</th>
+          <th>功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>a</code></td>
+          <td>暂存全部文件</td>
+      </tr>
+      <tr>
+          <td><code>空格</code></td>
+          <td>暂存/取消暂存单个文件</td>
+      </tr>
+      <tr>
+          <td><code>c</code></td>
+          <td>提交（写提交信息）</td>
+      </tr>
+      <tr>
+          <td><code>P</code></td>
+          <td>推送到远程</td>
+      </tr>
+      <tr>
+          <td><code>p</code></td>
+          <td>从远程拉取最新代码</td>
+      </tr>
+      <tr>
+          <td><code>z</code></td>
+          <td>撤销上一步操作</td>
+      </tr>
+      <tr>
+          <td><code>q</code></td>
+          <td>退出 Lazygit</td>
+      </tr>
+      <tr>
+          <td><code>?</code></td>
+          <td>查看当前区域所有快捷键</td>
+      </tr>
+      <tr>
+          <td><code>←→</code></td>
+          <td>切换左右面板</td>
+      </tr>
+      <tr>
+          <td><code>↑↓</code></td>
+          <td>在列表中移动</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="查看提交历史和回滚">查看提交历史和回滚<a hidden class="anchor" aria-hidden="true" href="#查看提交历史和回滚">#</a></h2>
+<p>按数字键 <code>4</code> 进入 <strong>Commits</strong> 区域，可以看到所有历史提交记录。</p>
+<p>找到想回滚的那条提交，按 <code>g</code> 可以选择回滚方式：</p>
+<ul>
+<li><strong>Soft reset</strong> — 回到那个版本，但保留文件改动</li>
+<li><strong>Hard reset</strong> — 完全回到那个版本，丢弃之后的所有改动</li>
+</ul>
+<blockquote>
+<p>注意：Hard reset 不可逆，操作前确认清楚。</p>
+</blockquote>
+<h2 id="拉取最新代码">拉取最新代码<a hidden class="anchor" aria-hidden="true" href="#拉取最新代码">#</a></h2>
+<p>在多台电脑协作时，开始工作前先拉取：</p>
+<pre tabindex="0"><code>p（小写）  拉取远程最新代码
+</code></pre><p>等同于命令行的 <code>git pull</code>。</p>
+<h2 id="小结">小结<a hidden class="anchor" aria-hidden="true" href="#小结">#</a></h2>
+<p>Lazygit 的学习成本极低，记住这五个按键就能覆盖 90% 的日常操作：</p>
+<pre tabindex="0"><code>a → c → P
+暂存 → 提交 → 推送
+</code></pre><p>配合 Zed 编辑器使用，改代码用 Zed，管理 Git 用 Lazygit，
+整个博客更新流程既直观又高效。</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="//localhost:1313/tags/github/">GitHub</a></li>
-      <li><a href="//localhost:1313/tags/cloudflare/">Cloudflare</a></li>
-      <li><a href="//localhost:1313/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">工作流</a></li>
+      <li><a href="//localhost:1313/tags/git/">Git</a></li>
+      <li><a href="//localhost:1313/tags/%E5%B7%A5%E5%85%B7/">工具</a></li>
+      <li><a href="//localhost:1313/tags/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/">开发效率</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="//localhost:1313/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
-    <span class="title">« Prev</span>
-    <span>Lazygit 使用指南：告别复杂的 Git 命令</span>
-  </a>
-  <a class="next" href="//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/">
+  <a class="next" href="//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
     <span class="title">Next »</span>
-    <span>为博客添加评论区：Giscus</span>
+    <span>多台电脑协作开发：GitHub 同步工作流指南</span>
   </a>
 </nav>
 
