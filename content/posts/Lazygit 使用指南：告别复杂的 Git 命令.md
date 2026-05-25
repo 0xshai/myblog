@@ -31,10 +31,19 @@ Windows 下载 `lazygit_x.x.x_windows_x86_64.zip`，解压后把 `lazygit.exe` �
 
 然后把这个目录加入系统环境变量 PATH：
 
+**英文系统：**
 1. `Win + S` 搜索 **Environment Variables**
 2. 点 **Edit the system environment variables**
 3. 右下角点 **Environment Variables**
-4. 上半部分 User variables 找到 **Path** → Edit → New
+4. 上半部分 **User variables** 找到 **Path** → Edit → New
+5. 填入 `C:\tools`，确定保存
+6. 重启终端
+
+**中文系统：**
+1. `Win + S` 搜索 **环境变量**
+2. 点 **编辑系统环境变量**
+3. 右下角点 **环境变量**
+4. 上半部分 **用户变量** 找到 **Path** → 编辑 → 新建
 5. 填入 `C:\tools`，确定保存
 6. 重启终端
 
