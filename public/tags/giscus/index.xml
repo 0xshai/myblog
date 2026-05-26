@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Giscus on SHAIFX的技术博客</title>
-    <link>//localhost:1313/tags/giscus/</link>
+    <link>/tags/giscus/</link>
     <description>Recent content in Giscus on SHAIFX的技术博客</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 23 May 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/giscus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/giscus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为博客添加评论区：Giscus</title>
-      <link>//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</link>
+      <link>/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</link>
       <pubDate>Sat, 23 May 2026 10:00:00 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</guid>
+      <guid>/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</guid>
       <description>基于 GitHub Discussions 的免费评论系统，数据在自己手里，零成本接入 Hugo PaperMod。</description>
     </item>
   </channel>

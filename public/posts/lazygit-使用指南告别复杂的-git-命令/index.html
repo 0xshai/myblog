@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Lazygit 使用指南：告别复杂的 Git 命令 | SHAIFX的技术博客</title>
 <meta name="keywords" content="Git, 工具, 开发效率">
 <meta name="description" content="用 Lazygit 可视化管理 Git，暂存、提交、推送全程键盘操作，再也不用记复杂命令。">
 <meta name="author" content="">
-<link rel="canonical" href="//localhost:1313/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//localhost:1313/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
+<link rel="alternate" hreflang="en" href="/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
 <noscript>
     <style>
         #theme-toggle,
@@ -66,13 +66,79 @@
 
 </script><script defer src="https://cloud.umami.is/script.js" data-website-id="36a9394a-df09-40fa-ac1a-cd2dccafef5d"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<meta property="og:url" content="/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
+  <meta property="og:site_name" content="SHAIFX的技术博客">
+  <meta property="og:title" content="Lazygit 使用指南：告别复杂的 Git 命令">
+  <meta property="og:description" content="用 Lazygit 可视化管理 Git，暂存、提交、推送全程键盘操作，再也不用记复杂命令。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-25T00:00:00+00:00">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="工具">
+    <meta property="article:tag" content="开发效率">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lazygit 使用指南：告别复杂的 Git 命令">
+  <meta name="twitter:description" content="用 Lazygit 可视化管理 Git，暂存、提交、推送全程键盘操作，再也不用记复杂命令。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Lazygit 使用指南：告别复杂的 Git 命令",
+      "item": "/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Lazygit 使用指南：告别复杂的 Git 命令",
+  "name": "Lazygit 使用指南：告别复杂的 Git 命令",
+  "description": "用 Lazygit 可视化管理 Git，暂存、提交、推送全程键盘操作，再也不用记复杂命令。",
+  "keywords": [
+    "Git", "工具", "开发效率"
+  ],
+  "articleBody": "每次用 Git 都要输一堆命令？git add .、git commit -m、git push…… Lazygit 把这些操作变成可视化界面，全程键盘操作，直观又高效。\n什么是 Lazygit Lazygit 是一个运行在终端里的 Git 可视化工具，开源免费。 界面分为几个区域，左边显示文件改动、分支、提交历史，右边预览具体内容。\n核心优势：\n不用记 Git 命令，按键提示全在底部 提交前能清楚看到每个文件改了哪几行 回滚历史版本只需几个按键 比 Git 命令行快很多 安装 去 GitHub 下载最新版：\nhttps://github.com/jesseduffield/lazygit/releases/latest Windows 下载 lazygit_x.x.x_windows_x86_64.zip，解压后把 lazygit.exe 放到一个固定目录，比如 C:\\tools\\。\n然后把这个目录加入系统环境变量 PATH：\n英文系统：\nWin + S 搜索 Environment Variables 点 Edit the system environment variables 右下角点 Environment Variables 上半部分 User variables 找到 Path → Edit → New 填入 C:\\tools，确定保存 重启终端 中文系统：\nWin + S 搜索 环境变量 点 编辑系统环境变量 右下角点 环境变量 上半部分 用户变量 找到 Path → 编辑 → 新建 填入 C:\\tools，确定保存 重启终端 之后在终端输入 lazygit 就能直接启动。\n打开方式 每次使用前，先在终端进入你的项目目录：\ncd D:\\code\\myblog lazygit 界面说明 打开后界面分为五个区域：\n[1] Status — 当前仓库状态\r[2] Files — 改动的文件列表\r[3] Branches — 本地和远程分支\r[4] Commits — 提交历史\r[5] Stash — 临时储藏区 按数字键 1~5 快速切换到对应区域，按 Tab 在区域间循环切换。\n日常推送流程 第一步：查看改动文件 打开 Lazygit 后，左边第 2 栏 Files 会显示所有改动的文件：\n红色 ?? — 新文件，还没被 Git 追踪 红色 M — 已有文件被修改 绿色 — 已暂存，准备提交 第二步：暂存文件 a 暂存全部文件\r空格 暂存光标所在的单个文件 暂存后文件变成绿色。\n第三步：写提交信息并提交 c 打开提交信息输入框 输入本次改动的描述，比如 add bookmark page，回车确认提交。\n第四步：推送到 GitHub P（大写） 推送到远程仓库 推送成功后底部会显示确认信息。\n常用快捷键 按键 功能 a 暂存全部文件 空格 暂存/取消暂存单个文件 c 提交（写提交信息） P 推送到远程 p 从远程拉取最新代码 z 撤销上一步操作 q 退出 Lazygit ? 查看当前区域所有快捷键 ←→ 切换左右面板 ↑↓ 在列表中移动 查看提交历史和回滚 按数字键 4 进入 Commits 区域，可以看到所有历史提交记录。\n找到想回滚的那条提交，按 g 可以选择回滚方式：\nSoft reset — 回到那个版本，但保留文件改动 Hard reset — 完全回到那个版本，丢弃之后的所有改动 注意：Hard reset 不可逆，操作前确认清楚。\n拉取最新代码 在多台电脑协作时，开始工作前先拉取：\np（小写） 拉取远程最新代码 等同于命令行的 git pull。\n小结 Lazygit 的学习成本极低，记住这五个按键就能覆盖 90% 的日常操作：\na → c → P\r暂存 → 提交 → 推送 配合 Zed 编辑器使用，改代码用 Zed，管理 Git 用 Lazygit， 整个博客更新流程既直观又高效。\n",
+  "wordCount" : "237",
+  "inLanguage": "en",
+  "datePublished": "2026-05-25T00:00:00Z",
+  "dateModified": "2026-05-25T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SHAIFX的技术博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="//localhost:1313/" accesskey="h" title="SHAIFX的技术博客 (Alt + H)">SHAIFX的技术博客</a>
+            <a href="/" accesskey="h" title="SHAIFX的技术博客 (Alt + H)">SHAIFX的技术博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -98,27 +164,27 @@
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="//localhost:1313/posts/" title="文章">
+                <a href="/posts/" title="文章">
                     <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/tags/" title="标签">
+                <a href="/tags/" title="标签">
                     <span>标签</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/archives/" title="归档">
+                <a href="/archives/" title="归档">
                     <span>归档</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/bookmark/" title="书签">
+                <a href="/bookmark/" title="书签">
                     <span>书签</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/about/" title="About">
+                <a href="/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
@@ -206,11 +272,21 @@ Lazygit 把这些操作变成可视化界面，全程键盘操作，直观又高
 <pre tabindex="0"><code>https://github.com/jesseduffield/lazygit/releases/latest
 </code></pre><p>Windows 下载 <code>lazygit_x.x.x_windows_x86_64.zip</code>，解压后把 <code>lazygit.exe</code> 放到一个固定目录，比如 <code>C:\tools\</code>。</p>
 <p>然后把这个目录加入系统环境变量 PATH：</p>
+<p><strong>英文系统：</strong></p>
 <ol>
 <li><code>Win + S</code> 搜索 <strong>Environment Variables</strong></li>
 <li>点 <strong>Edit the system environment variables</strong></li>
 <li>右下角点 <strong>Environment Variables</strong></li>
-<li>上半部分 User variables 找到 <strong>Path</strong> → Edit → New</li>
+<li>上半部分 <strong>User variables</strong> 找到 <strong>Path</strong> → Edit → New</li>
+<li>填入 <code>C:\tools</code>，确定保存</li>
+<li>重启终端</li>
+</ol>
+<p><strong>中文系统：</strong></p>
+<ol>
+<li><code>Win + S</code> 搜索 <strong>环境变量</strong></li>
+<li>点 <strong>编辑系统环境变量</strong></li>
+<li>右下角点 <strong>环境变量</strong></li>
+<li>上半部分 <strong>用户变量</strong> 找到 <strong>Path</strong> → 编辑 → 新建</li>
 <li>填入 <code>C:\tools</code>，确定保存</li>
 <li>重启终端</li>
 </ol>
@@ -322,12 +398,12 @@ Lazygit 把这些操作变成可视化界面，全程键盘操作，直观又高
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="//localhost:1313/tags/git/">Git</a></li>
-      <li><a href="//localhost:1313/tags/%E5%B7%A5%E5%85%B7/">工具</a></li>
-      <li><a href="//localhost:1313/tags/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/">开发效率</a></li>
+      <li><a href="/tags/git/">Git</a></li>
+      <li><a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a></li>
+      <li><a href="/tags/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/">开发效率</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
+  <a class="next" href="/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
     <span class="title">Next »</span>
     <span>多台电脑协作开发：GitHub 同步工作流指南</span>
   </a>
@@ -352,7 +428,7 @@ Lazygit 把这些操作变成可视化界面，全程键盘操作，直观又高
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="//localhost:1313/">SHAIFX的技术博客</a></span> · 
+        <span>&copy; 2026 <a href="/">SHAIFX的技术博客</a></span> · 
 
     
     

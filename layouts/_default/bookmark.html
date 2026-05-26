@@ -15,7 +15,7 @@
                         <span class="oss-badge">开源</span>
                         {{- end }}
                     </div>
-                    <div class="bm-desc">{{ .desc }}</div>
+                    <div class="bm-desc" data-full-desc="{{ .desc }}">{{ .desc }}</div>
                 </div>
                 <svg
                     class="bm-arrow"
@@ -131,4 +131,18 @@
         }
     }
 </style>
+<script>
+    const updateBookmarkDescTitles = () => {
+        document.querySelectorAll(".bm-desc").forEach((desc) => {
+            if (desc.scrollWidth > desc.clientWidth) {
+                desc.title = desc.dataset.fullDesc || desc.textContent.trim();
+            } else {
+                desc.removeAttribute("title");
+            }
+        });
+    };
+
+    updateBookmarkDescTitles();
+    window.addEventListener("resize", updateBookmarkDescTitles);
+</script>
 {{- end }}

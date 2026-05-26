@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">SHAIFX 的未来路线图</title>
+  <desc id="desc">从当前博客出发，延伸到游戏、AI、工具和学习项目。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101820"/>
+      <stop offset="1" stop-color="#27323a"/>
+    </linearGradient>
+    <style>
+      .panel{fill:#f7faf8;stroke:#d9e3df;stroke-width:2}
+      .future{fill:#fff8e7;stroke:#f0c66e;stroke-width:2}
+      .label{fill:#1f2a28;font:700 28px system-ui,Segoe UI,Arial,sans-serif}
+      .small{fill:#5d6b66;font:500 18px system-ui,Segoe UI,Arial,sans-serif}
+      .hub{fill:#e9f7f2;stroke:#79b8a9;stroke-width:3}
+      .hubtitle{fill:#17342e;font:800 34px system-ui,Segoe UI,Arial,sans-serif}
+      .hubsub{fill:#3f5b54;font:600 18px system-ui,Segoe UI,Arial,sans-serif}
+      .line{stroke:#79b8a9;stroke-width:4;stroke-linecap:round}
+      .dash{stroke:#f0c66e;stroke-width:4;stroke-linecap:round;stroke-dasharray:10 12}
+    </style>
+  </defs>
+  <rect width="960" height="420" rx="22" fill="url(#bg)"/>
+  <rect x="348" y="142" width="264" height="136" rx="28" class="hub"/>
+  <text x="480" y="198" text-anchor="middle" class="hubtitle">SHAIFX</text>
+  <text x="480" y="232" text-anchor="middle" class="hubsub">技术博客和实验田</text>
+  <line x1="348" y1="188" x2="278" y2="128" class="line"/>
+  <line x1="612" y1="188" x2="682" y2="128" class="line"/>
+  <path d="M370 270 C300 310 230 322 160 326" class="dash"/>
+  <path d="M590 270 C664 318 740 330 810 326" class="dash"/>
+  <rect x="68" y="58" width="250" height="112" rx="16" class="panel"/>
+  <text x="100" y="106" class="label">现在</text>
+  <text x="100" y="138" class="small">建站 / Git / 工具记录</text>
+  <rect x="642" y="58" width="250" height="112" rx="16" class="panel"/>
+  <text x="674" y="106" class="label">正在生长</text>
+  <text x="674" y="138" class="small">工作流 / 小项目 / 复盘</text>
+  <rect x="58" y="266" width="260" height="112" rx="16" class="future"/>
+  <text x="90" y="314" class="label">可能出现</text>
+  <text x="90" y="346" class="small">游戏、教程、交互工具</text>
+  <rect x="642" y="266" width="260" height="112" rx="16" class="future"/>
+  <text x="674" y="314" class="label">未来惊喜</text>
+  <text x="674" y="346" class="small">AI 实验和奇妙作品</text>
+</svg>

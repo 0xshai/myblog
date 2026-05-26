@@ -5,9 +5,9 @@
       url: https://zed.dev/
       desc: 轻量极速的现代代码编辑器
       opensource: true
-    - name: Tabby
-      url: https://tabby.sh/
-      desc: 好看的跨平台终端工具
+    - name: WezTerm
+      url: https://wezfurlong.org/wezterm
+      desc: 高性能跨平台终端模拟器
       opensource: true
     - name: Lazygit
       url: https://github.com/jesseduffield/lazygit
@@ -25,6 +25,10 @@
       url: https://zen-browser.app
       desc: 极简界面的 Firefox 内核浏览器
       opensource: true
+    - name: Mullvad Browser
+      url: https://mullvad.net/browser
+      desc: 由 Mullvad VPN 与 Tor 项目联合开发
+      opensource: true
 
 - category: 图像处理
   icon: 🎨
@@ -32,6 +36,10 @@
     - name: ArcBrush
       url: https://arcbrush.com/
       desc: 节点式修图工具
+    - name: Upscayl
+      url: https://upscayl.org
+      desc: AI 图片无损放大，本地运行
+      opensource: true
 
 - category: 下载工具
   icon: ⬇️
@@ -40,6 +48,64 @@
       url: https://motrix-next.pages.dev/#
       desc: 全能下载管理器
       opensource: true
+    - name: AB Download
+      url: https://abdownloadmanager.com
+      desc: 开源多线程下载加速，速度最高提升500%
+      opensource: true
+
+- category: 剪辑
+  icon: 🎬
+  items:
+    - name: 必剪
+      url: https://bcut.bilibili.cn
+      desc: B站官方出品剪辑工具
+    - name: LosslessCut
+      url: https://github.com/mifi/lossless-cut
+      desc: 无损视频剪切工具，不重新编码
+      opensource: true
+
+- category: 设计
+  icon: ✏️
+  items:
+    - name: Penpot
+      url: https://penpot.app
+      desc: 开源 Figma 替代，可自托管
+      opensource: true
+    - name: Excalidraw
+      url: https://excalidraw.com
+      desc: 手绘风格白板工具
+      opensource: true
+
+- category: 系统工具
+  icon: ⚙️
+  items:
+    - name: PowerToys
+      url: https://github.com/microsoft/PowerToys
+      desc: 微软出品 Windows 效率工具集
+      opensource: true
+    - name: Everything
+      url: https://voidtools.com
+      desc: Windows 文件秒搜
+    - name: Flow Launcher
+      url: https://flowlauncher.com
+      desc: Windows 快速启动工具
+      opensource: true
+    - name: ShareX
+      url: https://getsharex.com
+      desc: 强大的截图录屏工具
+      opensource: true
+
+- category: 文件同步
+  icon: 🔄
+  items:
+    - name: Syncthing
+      url: https://syncthing.net
+      desc: 设备间直接同步，不经过任何服务器
+      opensource: true
+    - name: LocalSend
+      url: https://localsend.org
+      desc: 局域网内跨设备传文件，无需联网
+      opensource: true
 
 - category: 输入法
   icon: ⌨️
@@ -47,6 +113,29 @@
     - name: 清风输入法
       url: https://huanfeng.github.io/WindInput/
       desc: 简洁轻量的输入法
+      opensource: true
+
+- category: 邮箱
+  icon: 📬
+  items:
+    - name: Outlook
+      url: https://outlook.com
+      desc: 微软邮箱，功能全面
+    - name: Proton Mail
+      url: https://proton.me
+      desc: 端对端加密，瑞士服务器
+      opensource: true
+    - name: Tuta Mail
+      url: https://tuta.com
+      desc: 德国团队，连元数据都加密
+      opensource: true
+
+- category: 密码管理
+  icon: 🔐
+  items:
+    - name: Bitwarden
+      url: https://bitwarden.com
+      desc: 最好的开源密码管理器，可自托管
       opensource: true
 
 - category: 笔记

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>不蒜子 on SHAIFX的技术博客</title>
-    <link>//localhost:1313/tags/%E4%B8%8D%E8%92%9C%E5%AD%90/</link>
+    <link>/tags/%E4%B8%8D%E8%92%9C%E5%AD%90/</link>
     <description>Recent content in 不蒜子 on SHAIFX的技术博客</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 21 May 2026 11:00:00 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E4%B8%8D%E8%92%9C%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E4%B8%8D%E8%92%9C%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为博客添加访问统计：Umami &#43; 不蒜子</title>
-      <link>//localhost:1313/posts/umami-busuanzi-analytics/</link>
+      <link>/posts/umami-busuanzi-analytics/</link>
       <pubDate>Thu, 21 May 2026 11:00:00 +0800</pubDate>
-      <guid>//localhost:1313/posts/umami-busuanzi-analytics/</guid>
+      <guid>/posts/umami-busuanzi-analytics/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;一套给自己看，一套给访客看。用 Umami + 不蒜子为博客添加完整的访问统计。&lt;/p&gt;
 &lt;/blockquote&gt;

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>多台电脑协作开发：GitHub 同步工作流指南 | SHAIFX的技术博客</title>
 <meta name="keywords" content="GitHub, Cloudflare, 工作流">
 <meta name="description" content="如何在多台电脑间同步代码，以及控制 Cloudflare Pages 自动部署的实用技巧。">
 <meta name="author" content="">
-<link rel="canonical" href="//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
+<link rel="canonical" href="/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
+<link rel="alternate" hreflang="en" href="/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
 <noscript>
     <style>
         #theme-toggle,
@@ -66,13 +66,79 @@
 
 </script><script defer src="https://cloud.umami.is/script.js" data-website-id="36a9394a-df09-40fa-ac1a-cd2dccafef5d"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<meta property="og:url" content="/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/">
+  <meta property="og:site_name" content="SHAIFX的技术博客">
+  <meta property="og:title" content="多台电脑协作开发：GitHub 同步工作流指南">
+  <meta property="og:description" content="如何在多台电脑间同步代码，以及控制 Cloudflare Pages 自动部署的实用技巧。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-25T00:00:00+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Cloudflare">
+    <meta property="article:tag" content="工作流">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="多台电脑协作开发：GitHub 同步工作流指南">
+  <meta name="twitter:description" content="如何在多台电脑间同步代码，以及控制 Cloudflare Pages 自动部署的实用技巧。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "多台电脑协作开发：GitHub 同步工作流指南",
+      "item": "/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "多台电脑协作开发：GitHub 同步工作流指南",
+  "name": "多台电脑协作开发：GitHub 同步工作流指南",
+  "description": "如何在多台电脑间同步代码，以及控制 Cloudflare Pages 自动部署的实用技巧。",
+  "keywords": [
+    "GitHub", "Cloudflare", "工作流"
+  ],
+  "articleBody": "在用 GitHub + Cloudflare Pages 管理博客时，经常需要在不同电脑上切换开发。 本文整理了多设备协作的完整工作流，以及如何控制 Cloudflare 自动部署。\n一、换了新电脑，如何拿到代码 每次在新电脑上第一次工作，需要把仓库克隆到本地：\ngit clone https://github.com/你的用户名/myblog.git cd myblog npm install 三行命令搞定——代码拉下来，依赖自动安装，直接可以开发。\nnpm install 会根据 package.json 重新下载所有依赖包，和原来完全一致， 所以 node_modules/ 不需要上传到 GitHub，换电脑也不影响。\n二、每次开始和结束工作的习惯 开始工作前，先同步最新代码：\ngit pull 把另一台电脑推上去的改动拉下来，保持两台电脑代码一致。\n工作结束后，推送到 GitHub：\ngit add . git commit -m \"描述这次改了什么\" git push 核心习惯：每次开始先 pull，每次结束后 push。 养成这个习惯，多台电脑之间永远不会出现代码冲突。\n三、如何控制 Cloudflare Pages 自动部署 默认情况下每次 push 都会触发 Cloudflare 构建，免费版每月 500 次。 频繁调试时容易浪费额度，有两种方式控制。\n方法一：commit 信息加 [skip ci] git commit -m \"调整样式 [skip ci]\" Cloudflare 识别到这个关键词会自动跳过本次构建，灵活控制每次 push 是否部署。\n方法二：关闭自动部署 进入 Cloudflare Pages 后台：\nSettings → Builds \u0026 deployments → Branch control 把 Production branch 的自动部署关掉，之后所有 push 都不触发构建， 需要发布时手动去 Deployments → Create deployment 触发。\n推荐方式： 两种方法结合——平时调试用 [skip ci] 跳过， 确认要上线的 commit 正常写，让自动部署触发。\n四、没有部署时如何本地预览 方法一：hugo server（最常用） hugo server 打开 http://localhost:1313 实时预览，改动文件后页面自动刷新， 不需要构建也不需要部署，是最快的开发方式。\n方法二：Cloudflare 预览链接 每次 push 到 GitHub，Cloudflare Pages 会生成一个独立的预览链接：\nhttps://[commit-hash].shaifx.pages.dev 不影响正式域名，专门用来预览测试。\n五、完整工作流总结 换新电脑？先运行：\ngit clone https://github.com/你的用户名/myblog.git cd myblog npm install 每天开始工作：\ngit pull # 同步最新代码 hugo server # 本地预览 改完代码，还在调试：\ngit add . \u0026\u0026 git commit -m \"xxx [skip ci]\" \u0026\u0026 git push 改完代码，准备上线：\ngit add . \u0026\u0026 git commit -m \"xxx\" \u0026\u0026 git push 本地预览速度最快，改完立刻看到结果。 确认没问题再正式 push，既节省构建次数，也避免把半成品推到线上。\n",
+  "wordCount" : "173",
+  "inLanguage": "en",
+  "datePublished": "2026-05-25T00:00:00Z",
+  "dateModified": "2026-05-25T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SHAIFX的技术博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="//localhost:1313/" accesskey="h" title="SHAIFX的技术博客 (Alt + H)">SHAIFX的技术博客</a>
+            <a href="/" accesskey="h" title="SHAIFX的技术博客 (Alt + H)">SHAIFX的技术博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -98,27 +164,27 @@
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="//localhost:1313/posts/" title="文章">
+                <a href="/posts/" title="文章">
                     <span>文章</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/tags/" title="标签">
+                <a href="/tags/" title="标签">
                     <span>标签</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/archives/" title="归档">
+                <a href="/archives/" title="归档">
                     <span>归档</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/bookmark/" title="书签">
+                <a href="/bookmark/" title="书签">
                     <span>书签</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/about/" title="About">
+                <a href="/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
@@ -245,16 +311,16 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="//localhost:1313/tags/github/">GitHub</a></li>
-      <li><a href="//localhost:1313/tags/cloudflare/">Cloudflare</a></li>
-      <li><a href="//localhost:1313/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">工作流</a></li>
+      <li><a href="/tags/github/">GitHub</a></li>
+      <li><a href="/tags/cloudflare/">Cloudflare</a></li>
+      <li><a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">工作流</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="//localhost:1313/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
+  <a class="prev" href="/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/">
     <span class="title">« Prev</span>
     <span>Lazygit 使用指南：告别复杂的 Git 命令</span>
   </a>
-  <a class="next" href="//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/">
+  <a class="next" href="/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/">
     <span class="title">Next »</span>
     <span>为博客添加评论区：Giscus</span>
   </a>
@@ -279,7 +345,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="//localhost:1313/">SHAIFX的技术博客</a></span> · 
+        <span>&copy; 2026 <a href="/">SHAIFX的技术博客</a></span> · 
 
     
     

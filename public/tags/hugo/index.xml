@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on SHAIFX的技术博客</title>
-    <link>//localhost:1313/tags/hugo/</link>
+    <link>/tags/hugo/</link>
     <description>Recent content in Hugo on SHAIFX的技术博客</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 23 May 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为博客添加评论区：Giscus</title>
-      <link>//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</link>
+      <link>/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</link>
       <pubDate>Sat, 23 May 2026 10:00:00 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</guid>
+      <guid>/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8C%BA-giscus/</guid>
       <description>基于 GitHub Discussions 的免费评论系统，数据在自己手里，零成本接入 Hugo PaperMod。</description>
     </item>
     <item>
       <title>为博客添加访问统计：Umami &#43; 不蒜子</title>
-      <link>//localhost:1313/posts/umami-busuanzi-analytics/</link>
+      <link>/posts/umami-busuanzi-analytics/</link>
       <pubDate>Thu, 21 May 2026 11:00:00 +0800</pubDate>
-      <guid>//localhost:1313/posts/umami-busuanzi-analytics/</guid>
+      <guid>/posts/umami-busuanzi-analytics/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;一套给自己看，一套给访客看。用 Umami + 不蒜子为博客添加完整的访问统计。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -93,9 +93,9 @@
     </item>
     <item>
       <title>用 Hugo &#43; Cloudflare Pages 搭建个人博客</title>
-      <link>//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 21 May 2026 10:39:29 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;零成本、全静态、自动部署。用 Hugo 搭建个人博客并托管到 Cloudflare Pages 的完整流程。&lt;/p&gt;
 &lt;/blockquote&gt;

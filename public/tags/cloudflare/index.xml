@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cloudflare on SHAIFX的技术博客</title>
-    <link>//localhost:1313/tags/cloudflare/</link>
+    <link>/tags/cloudflare/</link>
     <description>Recent content in Cloudflare on SHAIFX的技术博客</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>多台电脑协作开发：GitHub 同步工作流指南</title>
-      <link>//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/</link>
+      <link>/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/</link>
       <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/</guid>
+      <guid>/posts/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91github-%E5%90%8C%E6%AD%A5%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%8C%87%E5%8D%97/</guid>
       <description>如何在多台电脑间同步代码，以及控制 Cloudflare Pages 自动部署的实用技巧。</description>
     </item>
     <item>
       <title>用 Hugo &#43; Cloudflare Pages 搭建个人博客</title>
-      <link>//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 21 May 2026 10:39:29 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>/posts/%E7%94%A8-hugo-&#43;-cloudflare-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;零成本、全静态、自动部署。用 Hugo 搭建个人博客并托管到 Cloudflare Pages 的完整流程。&lt;/p&gt;
 &lt;/blockquote&gt;
