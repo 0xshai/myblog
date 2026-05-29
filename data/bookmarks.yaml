@@ -94,6 +94,24 @@
       url: https://getsharex.com
       desc: 强大的截图录屏工具
       opensource: true
+    - name: Scoop
+      url: https://scoop.sh
+      desc: Windows 命令行包管理器
+      opensource: true
+    - name: CrystalDiskInfo
+      url: https://crystalmark.info/en/software/crystaldiskinfo/
+      desc: 硬盘健康状态与 S.M.A.R.T. 监控工具
+      opensource: true
+
+- category: 翻译工具
+  icon: 🌐
+  items:
+    - name: DeepL
+      url: https://deepl.com
+      desc: 高质量 AI 翻译，支持文档翻译
+    - name: 欧路词典
+      url: https://www.eudic.net
+      desc: 专业英汉词典，支持本地词库
 
 - category: 文件同步
   icon: 🔄
@@ -141,13 +159,15 @@
 - category: 笔记
   icon: 📝
   items:
-    - name: Obsidian
-      url: https://obsidian.md
-      desc: 本地 Markdown 笔记，数据不上云
-    - name: Standard Notes
-      url: https://standardnotes.com
-      desc: 端对端加密，注重隐私的笔记应用
+    - name: Notesnook
+      url: https://notesnook.com
+      desc: 端对端加密笔记，注重隐私
       opensource: true
-    - name: Simplenote
-      url: https://simplenote.com
-      desc: 极简轻量的跨平台笔记
+    - name: Tolaria
+      url: https://tolaria.md/
+      desc: 本地优先的卡片式笔记工具
+      opensource: true
+    - name: AppFlowy
+      url: https://appflowy.io
+      desc: Notion 替代，可完全自托管
+      opensource: true
