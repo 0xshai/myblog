@@ -49,9 +49,13 @@ theme = "PaperMod"
     url = "/bookmark/"
     weight = 4
   [[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 5
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 5
+    weight = 6
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
