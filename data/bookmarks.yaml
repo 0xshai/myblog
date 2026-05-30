@@ -176,7 +176,7 @@
   items:
     - name: Ente
       url: https://ente.io
-      desc: 端对端加密的照片与文件存储服务
+      desc: 端对端加密的照片与视频存储服务
       opensource: true
 
     - name: Filen
