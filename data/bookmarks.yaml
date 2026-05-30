@@ -167,7 +167,6 @@
       url: https://tolaria.md/
       desc: 本地优先的卡片式笔记工具
       opensource: true
-    - name: AppFlowy
-      url: https://appflowy.io
-      desc: Notion 替代，可完全自托管
-      opensource: true
+    - name: Anytype
+      url: https://anytype.io/
+      desc: 源码可查的本地优先 Notion 替代，支持离线与自托管
