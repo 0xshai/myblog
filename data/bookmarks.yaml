@@ -170,3 +170,20 @@
     - name: Anytype
       url: https://anytype.io/
       desc: 源码可查的本地优先 Notion 替代，支持离线与自托管
+
+- category: 加密云盘
+  icon: ☁️
+  items:
+    - name: Ente
+      url: https://ente.io
+      desc: 端对端加密的照片与文件存储服务
+      opensource: true
+
+    - name: Filen
+      url: https://filen.io
+      desc: 德国端对端加密云盘，可同步任意文件
+      opensource: true
+
+    - name: MEGA
+      url: https://mega.io
+      desc: 老牌加密云存储服务，免费空间较大
