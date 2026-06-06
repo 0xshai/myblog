@@ -40,6 +40,14 @@
       url: https://upscayl.org
       desc: AI 图片无损放大，本地运行
       opensource: true
+    - name: Darktable
+      url: https://www.darktable.org
+      desc: 专业 RAW 后期处理，Lightroom 开源替代
+      opensource: true
+    - name: RapidRAW
+      url: https://github.com/CyberTimon/RapidRAW
+      desc: 轻量 GPU 加速 RAW 编辑器，界面简洁现代
+      opensource: true
 
 - category: 下载工具
   icon: ⬇️
