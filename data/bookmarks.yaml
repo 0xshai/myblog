@@ -155,6 +155,30 @@
       url: https://bitwarden.com
       desc: 最好的开源密码管理器，可自托管
       opensource: true
+    - name: Keyguard
+      url: https://github.com/AChep/keyguard-app
+      desc: Bitwarden 第三方客户端，界面更现代
+      opensource: true
+
+- category: 双因素认证
+  icon: 🔑
+  items:
+    - name: Aegis
+      url: https://getaegis.app
+      desc: Android 上最好的开源 2FA 应用
+      opensource: true
+    - name: 2FAS
+      url: https://2fas.com
+      desc: 跨平台 2FA，支持浏览器扩展
+      opensource: true
+
+- category: 办公
+  icon: 📄
+  items:
+    - name: OnlyOffice
+      url: https://www.onlyoffice.com
+      desc: 全平台开源办公套件，兼容 Office 格式
+      opensource: true
 
 - category: 笔记
   icon: 📝
@@ -167,9 +191,9 @@
       url: https://tolaria.md/
       desc: 本地优先的卡片式笔记工具
       opensource: true
-    - name: Anytype
-      url: https://anytype.io/
-      desc: 源码可查的本地优先 Notion 替代，支持离线与自托管
+    - name: Obsidian
+      url: https://obsidian.md
+      desc: 本地优先的知识库与笔记工具，支持 Markdown
 
 - category: 加密云盘
   icon: ☁️
