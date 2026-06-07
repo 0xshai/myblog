@@ -179,6 +179,10 @@
       url: https://2fas.com
       desc: 跨平台 2FA，支持浏览器扩展
       opensource: true
+    - name: Ente Auth
+      url: https://ente.io/auth
+      desc: 端对端加密的跨平台 2FA，支持云备份
+      opensource: true
 
 - category: 办公
   icon: 📄
@@ -211,6 +215,11 @@
       desc: 端对端加密的照片与视频存储服务
       opensource: true
 
+    - name: Ente Locker
+      url: https://ente.com/locker
+      desc: 端对端加密的文档保险箱，支持紧急联系人移交
+      opensource: true
+
     - name: Filen
       url: https://filen.io
       desc: 德国端对端加密云盘，可同步任意文件
@@ -219,3 +228,19 @@
     - name: MEGA
       url: https://mega.io
       desc: 老牌加密云存储服务，免费空间较大
+
+- category: 本地 AI
+  icon: 🤖
+  items:
+    - name: Ollama
+      url: https://ollama.com
+      desc: 本地 LLM 运行时，一条命令拉模型，提供 OpenAI 兼容 API
+      opensource: true
+    - name: Jan
+      url: https://jan.ai
+      desc: 本地优先的 AI 客户端，内置聊天界面，可作为 Ollama 前端
+      opensource: true
+    - name: Ensu
+      url: https://ente.com/blog/ensu
+      desc: 本地运行的 AI 聊天，模型不联网，对话不离开设备
+      opensource: true
