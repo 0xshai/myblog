@@ -13,6 +13,9 @@
       url: https://github.com/jesseduffield/lazygit
       desc: 终端里的 Git 可视化工具
       opensource: true
+    - name: Regex101
+      url: https://regex101.com
+      desc: 正则表达式在线调试，实时高亮匹配，支持多语言引擎
 
 - category: 浏览器
   icon: 🦁
@@ -126,6 +129,10 @@
     - name: 欧路词典
       url: https://www.eudic.net
       desc: 专业英汉词典，支持本地词库
+    - name: 沙拉查词
+      url: https://saladict.crimx.com
+      desc: 浏览器划词翻译扩展，支持 DeepL 等多引擎，可收藏单词本导出 Anki
+      opensource: true
 
 - category: 文件同步
   icon: 🔄
@@ -238,6 +245,14 @@
       url: https://super-productivity.com
       desc: 本地优先的任务管理与时间追踪，支持 Jira/GitHub/GitLab 集成
       opensource: true
+    - name: ActivityWatch
+      url: https://activitywatch.net
+      desc: 自动记录应用与网页使用时间，数据完全本地，开源无云
+      opensource: true
+    - name: CopyQ
+      url: https://hluk.github.io/CopyQ/
+      desc: 开源剪贴板历史管理，支持搜索、分类与脚本扩展
+      opensource: true
 
 - category: 学习工具
   icon: 📖
@@ -246,6 +261,17 @@
       url: https://typewords.cc
       desc: 以打字输入为核心的英语记忆系统，FSRS 间隔复习，数据本地存储
       opensource: true
+    - name: Anki
+      url: https://apps.ankiweb.net
+      desc: 间隔复习卡片工具，支持导入现成词库，跨平台开源
+      opensource: true
+    - name: Exercism
+      url: https://exercism.org
+      desc: 编程练习平台，有真人 mentor 异步代码评审，Python 轨道质量高
+      opensource: true
+    - name: Codewars
+      url: https://www.codewars.com
+      desc: 编程闯关练习，题目有趣，适合练语言本身而非刷算法
 
 - category: 本地 AI
   icon: 🤖
