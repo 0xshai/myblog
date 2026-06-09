@@ -96,10 +96,6 @@
 - category: 系统工具
   icon: ⚙️
   items:
-    - name: PowerToys
-      url: https://github.com/microsoft/PowerToys
-      desc: 微软出品 Windows 效率工具集
-      opensource: true
     - name: Everything
       url: https://voidtools.com
       desc: Windows 文件秒搜
@@ -260,10 +256,6 @@
     - name: TypeWords
       url: https://typewords.cc
       desc: 以打字输入为核心的英语记忆系统，FSRS 间隔复习，数据本地存储
-      opensource: true
-    - name: Anki
-      url: https://apps.ankiweb.net
-      desc: 间隔复习卡片工具，支持导入现成词库，跨平台开源
       opensource: true
     - name: Exercism
       url: https://exercism.org
