@@ -48,6 +48,12 @@
       url: https://github.com/CyberTimon/RapidRAW
       desc: 轻量 GPU 加速 RAW 编辑器，界面简洁现代
       opensource: true
+    - name: Photopea
+      url: https://www.photopea.com
+      desc: 在线 PS 替代，支持 PSD/AI/XD 格式，无需安装
+    - name: remove.photos
+      url: https://remove.photos/zh-cn/
+      desc: 在线 AI 抠图，无需注册，免费下载高清透明图
 
 - category: 下载工具
   icon: ⬇️
@@ -223,6 +229,22 @@
     - name: Filen
       url: https://filen.io
       desc: 德国端对端加密云盘，可同步任意文件
+      opensource: true
+
+- category: 效率工具
+  icon: ⏱️
+  items:
+    - name: Super Productivity
+      url: https://super-productivity.com
+      desc: 本地优先的任务管理与时间追踪，支持 Jira/GitHub/GitLab 集成
+      opensource: true
+
+- category: 学习工具
+  icon: 📖
+  items:
+    - name: TypeWords
+      url: https://typewords.cc
+      desc: 以打字输入为核心的英语记忆系统，FSRS 间隔复习，数据本地存储
       opensource: true
 
 - category: 本地 AI
