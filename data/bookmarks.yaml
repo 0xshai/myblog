@@ -119,15 +119,12 @@
 - category: 翻译工具
   icon: 🌐
   items:
-    - name: DeepL
-      url: https://deepl.com
-      desc: 高质量 AI 翻译，支持文档翻译
     - name: 欧路词典
       url: https://www.eudic.net
       desc: 专业英汉词典，支持本地词库
     - name: 沙拉查词
       url: https://saladict.crimx.com
-      desc: 浏览器划词翻译扩展，支持 DeepL 等多引擎，可收藏单词本导出 Anki
+      desc: 浏览器划词翻译扩展，聚合词典 、沉浸式(对照)翻译 & 查词
       opensource: true
 
 - category: 文件同步
