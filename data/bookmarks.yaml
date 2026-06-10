@@ -70,12 +70,9 @@
       desc: 开源多线程下载加速，速度最高提升500%
       opensource: true
 
-- category: 剪辑
+- category: 视频处理
   icon: 🎬
   items:
-    - name: 必剪
-      url: https://bcut.bilibili.cn
-      desc: B站官方出品剪辑工具
     - name: LosslessCut
       url: https://github.com/mifi/lossless-cut
       desc: 无损视频剪切工具，不重新编码
