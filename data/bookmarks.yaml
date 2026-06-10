@@ -77,6 +77,10 @@
       url: https://github.com/mifi/lossless-cut
       desc: 无损视频剪切工具，不重新编码
       opensource: true
+    - name: OBS Studio
+      url: https://obsproject.com
+      desc: 专业录屏与直播推流工具，跨平台开源
+      opensource: true
 
 - category: 设计
   icon: ✏️
@@ -100,9 +104,9 @@
       url: https://flowlauncher.com
       desc: Windows 快速启动工具
       opensource: true
-    - name: ShareX
-      url: https://getsharex.com
-      desc: 强大的截图录屏工具
+    - name: Flameshot
+      url: https://flameshot.org
+      desc: 跨平台开源截图工具，支持标注与上传
       opensource: true
     - name: Scoop
       url: https://scoop.sh
