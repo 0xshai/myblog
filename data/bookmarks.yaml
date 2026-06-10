@@ -57,6 +57,14 @@
     - name: remove.photos
       url: https://remove.photos/zh-cn/
       desc: 在线 AI 抠图，无需注册，免费下载高清透明图
+    - name: Squoosh
+      url: https://squoosh.app
+      desc: Google 出品的在线图片压缩工具，实时对比画质与体积，本地处理不上传
+      opensource: true
+    - name: ImageMagick
+      url: https://imagemagick.org
+      desc: 命令行图片处理工具，批量转换格式、调整尺寸、压缩质量，功能全面
+      opensource: true
 
 - category: 下载工具
   icon: ⬇️
@@ -80,6 +88,10 @@
     - name: OBS Studio
       url: https://obsproject.com
       desc: 专业录屏与直播推流工具，跨平台开源
+      opensource: true
+    - name: HandBrake
+      url: https://handbrake.fr
+      desc: 开源视频转码压制工具，支持 AV1/H.265/H.264，跨平台免费
       opensource: true
 
 - category: 设计
