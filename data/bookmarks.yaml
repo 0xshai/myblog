@@ -230,10 +230,6 @@
     url: https://activitywatch.net
     desc: 自动记录应用与网页使用时间，数据完全本地，开源无云
     opensource: true
-  - name: CopyQ
-    url: https://hluk.github.io/CopyQ/
-    desc: 开源剪贴板历史管理，支持搜索、分类与脚本扩展
-    opensource: true
 - category: 学习工具
   icon: 📖
   items:
@@ -262,6 +258,10 @@
   - name: Ensu
     url: https://ente.com/blog/ensu
     desc: 本地运行的 AI 聊天，模型不联网，对话不离开设备
+    opensource: true
+  - name: Voicebox
+    url: https://voicebox.sh
+    desc: 开源本地 AI 语音工作室，声音克隆、全局听写、TTS 生成一体，数据不离本机，支持 MCP 接入 Claude
     opensource: true
 - category: AI 工具
   icon: 🧠
