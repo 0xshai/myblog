@@ -2,66 +2,73 @@
   本站累计访问 <span id="busuanzi_value_site_pv"></span> 次 · 访客 <span id="busuanzi_value_site_uv"></span> 人
 </div>
 
-<!-- Google Translate 初始化用，隐藏不显示 -->
+<!-- Google Translate 初始化，隐藏不显示 -->
 <div id="google_translate_element" style="display:none;"></div>
 
 <style>
-/* 隐藏 Google 自动插入的顶部 banner 和工具条 */
 .goog-te-banner-frame,
-.skiptranslate {
+#goog-gt-tt,
+.goog-te-balloon-frame,
+div#goog-gt- {
   display: none !important;
 }
-body {
-  top: 0 !important;
-}
+body { top: 0 !important; }
 
-/* 自定义语言切换按钮，和 theme-toggle 保持一致 */
 #lang-toggle {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 6px;
+  padding: 4px 6px;
   color: var(--primary);
+  font-size: 0.85em;
+  font-weight: 600;
+  font-family: inherit;
+  line-height: 1;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   opacity: 0.85;
   transition: opacity 0.2s;
+  letter-spacing: 0.02em;
 }
-#lang-toggle:hover {
-  opacity: 1;
-}
+#lang-toggle:hover { opacity: 1; }
+#lang-toggle.is-en { color: var(--primary); opacity: 1; }
 </style>
 
-<!-- 自定义语言切换按钮 -->
-<button id="lang-toggle" title="切换语言 / Toggle Language" onclick="toggleLang()">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-       fill="none" stroke="currentColor" stroke-width="2"
-       stroke-linecap="round" stroke-linejoin="round">
-    <path d="M5 8l6 6"/>
-    <path d="M4 14l6-6 2-3"/>
-    <path d="M2 5h12"/>
-    <path d="M7 2h1"/>
-    <path d="M22 22l-5-10-5 10"/>
-    <path d="M14 18h6"/>
-  </svg>
-</button>
+<button id="lang-toggle" title="切换语言 / Toggle Language" onclick="toggleLang()">文</button>
 
 <script>
-var langIsEn = false;
+var langIsEn = (document.cookie.indexOf('googtrans=/zh/en') !== -1);
+
+function updateIcon() {
+  var btn = document.getElementById('lang-toggle');
+  if (langIsEn) {
+    btn.textContent = 'A';
+    btn.classList.add('is-en');
+    btn.title = '切回中文 / Back to Chinese';
+  } else {
+    btn.textContent = '文';
+    btn.classList.remove('is-en');
+    btn.title = '切换英文 / Switch to English';
+  }
+}
 
 function toggleLang() {
-  var select = document.querySelector('.goog-te-combo');
-  if (!select) return;
-
   if (!langIsEn) {
-    select.value = 'en';
+    // 切换到英文：用 select 触发，同时写 cookie
+    var select = document.querySelector('.goog-te-combo');
+    if (select) {
+      select.value = 'en';
+      select.dispatchEvent(new Event('change'));
+    }
+    document.cookie = 'googtrans=/zh/en; path=/';
     langIsEn = true;
+    updateIcon();
   } else {
-    select.value = 'zh-CN';
-    langIsEn = false;
+    // 切回中文：清 cookie 刷新页面
+    document.cookie = 'googtrans=; path=/; expires=' + new Date(0).toUTCString();
+    document.cookie = 'googtrans=; path=/; domain=.' + location.hostname + '; expires=' + new Date(0).toUTCString();
+    location.reload();
   }
-  select.dispatchEvent(new Event('change'));
 }
 
 function googleTranslateElementInit() {
@@ -70,13 +77,13 @@ function googleTranslateElementInit() {
     'google_translate_element'
   );
 
-  // 等挂件初始化完成后，把按钮移到 theme-toggle 右边
   setTimeout(function () {
     var btn = document.getElementById('lang-toggle');
     var themeToggle = document.getElementById('theme-toggle');
     if (btn && themeToggle && themeToggle.parentNode) {
       themeToggle.parentNode.insertBefore(btn, themeToggle.nextSibling);
     }
+    updateIcon(); // 根据当前 cookie 状态同步图标
   }, 600);
 }
 </script>
