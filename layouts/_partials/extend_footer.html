@@ -2,17 +2,21 @@
   本站累计访问 <span id="busuanzi_value_site_pv"></span> 次 · 访客 <span id="busuanzi_value_site_uv"></span> 人
 </div>
 
-<!-- Google Translate 初始化，隐藏不显示 -->
 <div id="google_translate_element" style="display:none;"></div>
 
 <style>
+/* 隐藏顶部横条 */
 .goog-te-banner-frame,
-#goog-gt-tt,
-.goog-te-balloon-frame,
-div#goog-gt- {
+iframe.goog-te-banner-frame,
+.skiptranslate iframe {
   display: none !important;
+  height: 0 !important;
 }
-body { top: 0 !important; }
+/* Google 会给 body 加 top 偏移，强制清除 */
+body {
+  top: 0 !important;
+  position: static !important;
+}
 
 #lang-toggle {
   background: none;
@@ -31,13 +35,27 @@ body { top: 0 !important; }
   letter-spacing: 0.02em;
 }
 #lang-toggle:hover { opacity: 1; }
-#lang-toggle.is-en { color: var(--primary); opacity: 1; }
+#lang-toggle.is-en { opacity: 1; }
 </style>
 
 <button id="lang-toggle" title="切换语言 / Toggle Language" onclick="toggleLang()">文</button>
 
 <script>
 var langIsEn = (document.cookie.indexOf('googtrans=/zh/en') !== -1);
+
+// MutationObserver：实时监听 DOM，banner 一出现立刻隐藏
+var observer = new MutationObserver(function () {
+  // 隐藏 banner iframe
+  document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame').forEach(function (el) {
+    el.style.setProperty('display', 'none', 'important');
+    el.style.setProperty('height', '0', 'important');
+  });
+  // 清除 body 的 top 偏移
+  if (document.body.style.top && document.body.style.top !== '0px') {
+    document.body.style.setProperty('top', '0', 'important');
+  }
+});
+observer.observe(document.documentElement, { childList: true, subtree: true, attributes: true });
 
 function updateIcon() {
   var btn = document.getElementById('lang-toggle');
@@ -54,7 +72,6 @@ function updateIcon() {
 
 function toggleLang() {
   if (!langIsEn) {
-    // 切换到英文：用 select 触发，同时写 cookie
     var select = document.querySelector('.goog-te-combo');
     if (select) {
       select.value = 'en';
@@ -64,7 +81,6 @@ function toggleLang() {
     langIsEn = true;
     updateIcon();
   } else {
-    // 切回中文：清 cookie 刷新页面
     document.cookie = 'googtrans=; path=/; expires=' + new Date(0).toUTCString();
     document.cookie = 'googtrans=; path=/; domain=.' + location.hostname + '; expires=' + new Date(0).toUTCString();
     location.reload();
@@ -83,7 +99,7 @@ function googleTranslateElementInit() {
     if (btn && themeToggle && themeToggle.parentNode) {
       themeToggle.parentNode.insertBefore(btn, themeToggle.nextSibling);
     }
-    updateIcon(); // 根据当前 cookie 状态同步图标
+    updateIcon();
   }, 600);
 }
 </script>
