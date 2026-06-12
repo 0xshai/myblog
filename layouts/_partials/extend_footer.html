@@ -2,50 +2,82 @@
   本站累计访问 <span id="busuanzi_value_site_pv"></span> 次 · 访客 <span id="busuanzi_value_site_uv"></span> 人
 </div>
 
+<!-- Google Translate 初始化用，隐藏不显示 -->
 <div id="google_translate_element" style="display:none;"></div>
 
 <style>
-#google_translate_element .goog-te-gadget-simple {
-  background: transparent;
-  border: none;
-  font-size: 0.9em;
-  padding: 4px;
-  cursor: pointer;
-}
-#google_translate_element .goog-te-gadget-simple span,
-#google_translate_element .goog-te-gadget-simple a {
-  color: var(--primary);
-  text-decoration: none;
-}
-/* 隐藏 Google 的 logo 和多余文字 */
-#google_translate_element .goog-logo-link,
-#google_translate_element .goog-te-gadget-simple img {
+/* 隐藏 Google 自动插入的顶部 banner 和工具条 */
+.goog-te-banner-frame,
+.skiptranslate {
   display: none !important;
+}
+body {
+  top: 0 !important;
+}
+
+/* 自定义语言切换按钮，和 theme-toggle 保持一致 */
+#lang-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+#lang-toggle:hover {
+  opacity: 1;
 }
 </style>
 
+<!-- 自定义语言切换按钮 -->
+<button id="lang-toggle" title="切换语言 / Toggle Language" onclick="toggleLang()">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 8l6 6"/>
+    <path d="M4 14l6-6 2-3"/>
+    <path d="M2 5h12"/>
+    <path d="M7 2h1"/>
+    <path d="M22 22l-5-10-5 10"/>
+    <path d="M14 18h6"/>
+  </svg>
+</button>
+
 <script>
+var langIsEn = false;
+
+function toggleLang() {
+  var select = document.querySelector('.goog-te-combo');
+  if (!select) return;
+
+  if (!langIsEn) {
+    select.value = 'en';
+    langIsEn = true;
+  } else {
+    select.value = 'zh-CN';
+    langIsEn = false;
+  }
+  select.dispatchEvent(new Event('change'));
+}
+
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
-    {
-      pageLanguage: 'zh',
-      includedLanguages: 'en',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-      autoDisplay: false
-    },
+    { pageLanguage: 'zh', includedLanguages: 'en', autoDisplay: false },
     'google_translate_element'
   );
 
-  // 等挂件渲染完成后移入导航栏
+  // 等挂件初始化完成后，把按钮移到 theme-toggle 右边
   setTimeout(function () {
-    var el = document.getElementById('google_translate_element');
+    var btn = document.getElementById('lang-toggle');
     var themeToggle = document.getElementById('theme-toggle');
-    if (el && themeToggle && themeToggle.parentNode) {
-      el.style.display = 'inline-flex';
-      el.style.alignItems = 'center';
-      themeToggle.parentNode.insertBefore(el, themeToggle);
+    if (btn && themeToggle && themeToggle.parentNode) {
+      themeToggle.parentNode.insertBefore(btn, themeToggle.nextSibling);
     }
-  }, 500);
+  }, 600);
 }
 </script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
