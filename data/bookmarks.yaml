@@ -82,6 +82,10 @@
     url: https://handbrake.fr
     desc: 开源视频转码压制工具，支持 AV1/H.265/H.264，跨平台免费
     opensource: true
+  - name: MediaInfo
+    url: https://mediaarea.net/en/MediaInfo
+    desc: 视频与音频文件技术参数查看工具，编码、码率、色彩空间等信息一览无余
+    opensource: true
 - category: 设计
   icon: ✏️
   items:
