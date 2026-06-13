@@ -88,7 +88,8 @@
     opensource: true
   - name: CompressO
     url: https://compresso.codeforreal.com/
-    desc: 跨平台视频批量压缩工具，拖拽即用，保留画质同时大幅缩减体积
+    desc: 跨平台视频与图片压缩工具，FFmpeg 驱动，本地运行不上传，支持批量处理
+    opensource: true
 - category: 视频播放
   icon: 🎞️
   items:
