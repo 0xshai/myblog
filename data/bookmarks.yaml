@@ -86,6 +86,20 @@
     url: https://mediaarea.net/en/MediaInfo
     desc: 视频与音频文件技术参数查看工具，编码、码率、色彩空间等信息一览无余
     opensource: true
+  - name: CompressO
+    url: https://compresso.codeforreal.com/
+    desc: 跨平台视频批量压缩工具，拖拽即用，保留画质同时大幅缩减体积
+- category: 视频播放
+  icon: 🎞️
+  items:
+  - name: mpv
+    url: https://mpv.io
+    desc: 轻量高性能的命令行视频播放器，支持脚本扩展，GPU 解码，几乎兼容所有格式
+    opensource: true
+  - name: Screenbox
+    url: https://github.com/huynhsontung/Screenbox
+    desc: 基于 libVLC 的现代 Windows 视频播放器，界面简洁流畅，支持网络串流
+    opensource: true
 - category: 设计
   icon: ✏️
   items:
@@ -118,6 +132,10 @@
   - name: CrystalDiskInfo
     url: https://crystalmark.info/en/software/crystaldiskinfo/
     desc: 硬盘健康状态与 S.M.A.R.T. 监控工具
+    opensource: true
+  - name: WindowsCleaner
+    url: https://github.com/ElectroHeavenVN/WindowsCleaner
+    desc: 开源 Windows 垃圾清理工具，清除系统缓存、临时文件与无用注册表项
     opensource: true
 - category: 翻译工具
   icon: 🌐
