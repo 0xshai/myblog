@@ -1,6 +1,6 @@
 ---
 title: "40k Stars 开源工具 LosslessCut：把 FFmpeg 的能力装进 GUI"
-date: 2025-06-17
+date: 2026-06-17
 tags: ["开源工具", "视频处理", "FFmpeg", "Windows"]
 draft: false
 ---
