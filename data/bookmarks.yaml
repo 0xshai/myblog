@@ -150,6 +150,10 @@
       url: https://github.com/ElectroHeavenVN/WindowsCleaner
       desc: 开源 Windows 垃圾清理工具，清除系统缓存、临时文件与无用注册表项
       opensource: true
+    - name: RustDesk
+      url: https://rustdesk.com
+      desc: 开源跨平台远程桌面，支持自托管服务器，TeamViewer/AnyDesk 的隐私友好替代
+      opensource: true
 - category: 文件同步
   icon: 🔄
   items:
