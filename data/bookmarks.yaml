@@ -23,10 +23,13 @@
       url: https://mermaid.js.org
       desc: Markdown 风格图表语言，支持流程图、时序图、甘特图
       opensource: true
-
     - name: D2
       url: https://d2lang.com
       desc: 现代图表脚本语言，自动布局，生成效果优秀
+      opensource: true
+    - name: draw.io
+      url: https://app.diagrams.net/
+      desc: 免费在线流程图与图表绘制工具，支持本地保存，可与 Google Drive/GitHub 集成
       opensource: true
 - category: 浏览器
   icon: 🦁
@@ -72,10 +75,6 @@
     - name: MediaInfo
       url: https://mediaarea.net/en/MediaInfo
       desc: 视频与音频文件技术参数查看工具，编码、码率、色彩空间等信息一览无余
-      opensource: true
-    - name: CompressO
-      url: https://compresso.codeforreal.com/
-      desc: 跨平台视频与图片压缩工具，FFmpeg 驱动，本地运行不上传，支持批量处理
       opensource: true
 - category: 视频播放
   icon: 🎞️
