@@ -312,3 +312,15 @@
       url: https://github.com/msitarzewski/agency-agents
       desc: 200+ 专业 AI Agent 角色集合，覆盖工程、设计、营销等领域，兼容 Ollama 本地模型
       opensource: true
+    - name: "OpenCode"
+      url: "https://opencode.ai/"
+      desc: "开源 AI Coding Agent，支持终端/桌面/IDE，可接入 Claude、GPT、本地模型等 75+ 提供商"
+      opensource: true
+    - name: "OpenRouter"
+      url: "https://openrouter.ai/"
+      desc: "统一 API 接入 100+ 主流 AI 模型，支持 BYOK，方便在各 Coding 工具间切换模型源"
+      opensource: false
+    - name: "GitHub Models"
+      url: "https://github.com/marketplace/models"
+      desc: "在 GitHub 内直接免费试用各家主流 AI 模型，无需额外注册"
+      opensource: false
