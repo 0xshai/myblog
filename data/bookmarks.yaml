@@ -161,6 +161,17 @@
       url: https://rustdesk.com
       desc: 开源跨平台远程桌面，支持自托管服务器，TeamViewer/AnyDesk 的隐私友好替代
       opensource: true
+- category: 自托管
+  icon: 🏠
+  items:
+    - name: Immich
+      url: https://immich.app
+      desc: 开源自托管相册，AI 识别人脸场景，Google Photos 替代
+      opensource: true
+    - name: Rancher Desktop
+      url: https://rancherdesktop.io
+      desc: 开源容器管理桌面工具，内置 Docker 引擎，Docker Desktop 免费替代
+      opensource: true
 - category: 文件同步
   icon: 🔄
   items:
