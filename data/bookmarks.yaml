@@ -16,6 +16,10 @@
     - name: Regex101
       url: https://regex101.com
       desc: 正则表达式在线调试，实时高亮匹配，支持多语言引擎
+    - name: MarkItDown
+      url: https://github.com/microsoft/markitdown
+      desc: 微软出品，将 PDF、Word、PPT、图片、音频等批量转换为 Markdown
+      opensource: true
 - category: 图表工具
   icon: 📊
   items:
@@ -120,6 +124,10 @@
       url: https://imagemagick.org
       desc: 命令行图片处理工具，批量转换格式、调整尺寸、压缩质量，功能全面
       opensource: true
+    - name: ImageGlass
+      url: https://imageglass.org
+      desc: 轻量现代的 Windows 图片查看器，支持 RAW、WebP、AVIF 等格式
+      opensource: true
 - category: 设计
   icon: ✏️
   items:
@@ -153,9 +161,29 @@
       url: https://crystalmark.info/en/software/crystaldiskinfo/
       desc: 硬盘健康状态与 S.M.A.R.T. 监控工具
       opensource: true
-    - name: WindowsCleaner
-      url: https://github.com/ElectroHeavenVN/WindowsCleaner
-      desc: 开源 Windows 垃圾清理工具，清除系统缓存、临时文件与无用注册表项
+    - name: ShareX
+      url: https://getsharex.com
+      desc: 功能最强的开源截图录屏工具，支持几十种上传目标与工作流自动化
+      opensource: true
+    - name: BleachBit
+      url: https://www.bleachbit.org
+      desc: 开源系统清理工具，清除缓存、日志、浏览器数据，支持文件粉碎
+      opensource: true
+    - name: Bulk Crap Uninstaller
+      url: https://www.bcuninstaller.com
+      desc: 批量卸载 Windows 程序，自动清理残留，速度远超系统自带卸载
+      opensource: true
+    - name: System Informer
+      url: https://systeminformer.io
+      desc: Process Hacker 继任者，进程、服务、网络连接监控与分析
+      opensource: true
+    - name: NanaZip
+      url: https://github.com/M2Team/NanaZip
+      desc: 7-Zip 的现代化 Fork，原生适配 Windows 11 右键菜单
+      opensource: true
+    - name: Rufus
+      url: https://rufus.ie
+      desc: 最快的 USB 启动盘制作工具，支持 ISO 写入与 Windows To Go
       opensource: true
     - name: RustDesk
       url: https://rustdesk.com
