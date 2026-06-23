@@ -35,6 +35,10 @@
       url: https://app.diagrams.net/
       desc: 免费在线流程图与图表绘制工具，支持本地保存，可与 Google Drive/GitHub 集成
       opensource: true
+    - name: Drawnix
+      url: https://drawnix.com
+      desc: 开源一体化白板，思维导图、流程图、自由画三合一，支持 Mermaid/Markdown 导入，可自托管
+      opensource: true
 - category: 浏览器
   icon: 🦁
   items:
@@ -56,10 +60,6 @@
     - name: MotrixNext
       url: https://motrix-next.pages.dev/#
       desc: 全能下载管理器
-      opensource: true
-    - name: AB Download
-      url: https://abdownloadmanager.com
-      desc: 开源多线程下载加速，速度最高提升500%
       opensource: true
     - name: "yt-dlp"
       url: "https://github.com/yt-dlp/yt-dlp"
@@ -199,6 +199,23 @@
     - name: Rancher Desktop
       url: https://rancherdesktop.io
       desc: 开源容器管理桌面工具，内置 Docker 引擎，Docker Desktop 免费替代
+      opensource: true
+- category: 网站工具
+  icon: 🌍
+  items:
+    - name: Umami
+      url: https://umami.is
+      desc: 开源隐私友好的网站统计，无 Cookie、不收集个人信息，可自托管，Google Analytics 替代
+      opensource: true
+    - name: Google Search Console
+      url: https://search.google.com/search-console
+      desc: 监控网站在 Google 搜索中的收录与关键词表现，可手动提交新页面加速索引
+    - name: itdog
+      url: https://www.itdog.cn
+      desc: 国内多节点网络测速，支持 ping、tcping、HTTP 测速、路由追踪，覆盖各省各运营商
+    - name: WebPageTest
+      url: https://www.webpagetest.org
+      desc: 全球节点网页性能分析，瀑布图、Core Web Vitals、首屏渲染等指标一览
       opensource: true
 - category: 网络工具
   icon: 🌐
