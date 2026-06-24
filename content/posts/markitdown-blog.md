@@ -1,6 +1,6 @@
 ---
 title: "MarkItDown：微软开源的万能文档转 Markdown 工具"
-date: 2025-06-24
+date: 2026-06-24
 description: "将 PDF、Word、PPT、Excel、图片、音频批量转成 Markdown，专为 LLM / RAG 场景设计。附 Windows 实战踩坑记录。"
 tags: ["工具", "Python", "AI", "Markdown"]
 ShowToc: true
