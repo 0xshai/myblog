@@ -1,7 +1,7 @@
 ---
 title: "MarkItDown：微软开源的万能文档转 Markdown 工具"
-date: 2026-06-23
-description: "将 PDF、Word、PPT、Excel、图片、音频批量转成 Markdown，专为 LLM / RAG 场景设计。"
+date: 2025-06-24
+description: "将 PDF、Word、PPT、Excel、图片、音频批量转成 Markdown，专为 LLM / RAG 场景设计。附 Windows 实战踩坑记录。"
 tags: ["工具", "Python", "AI", "Markdown"]
 ShowToc: true
 TocOpen: true
@@ -11,27 +11,53 @@ TocOpen: true
 
 ---
 
-## 前置条件
+## Windows 快速上手（三步完成）
 
-- **Python 3.10 及以上版本**
-- 建议使用虚拟环境避免依赖冲突：
+> 以下流程在 `D:\V` 目录下操作，可替换为你自己的项目目录。
 
-```bash
+**第一步：新建 venv**
+
+```powershell
+cd D:\V
 python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS / Linux
-source .venv/bin/activate
 ```
+
+**第二步：激活并安装**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python -m pip install -U pip
+python -m pip install "markitdown[all]"
+```
+
+激活成功后提示符前会出现 `(.venv)`。
+
+**第三步：验证安装**
+
+```powershell
+python -m markitdown --version
+```
+
+**以后每次使用**，记住这一套：
+
+```powershell
+cd D:\V
+.\.venv\Scripts\Activate.ps1
+python -m markitdown "中文 文件名.xlsx" -o "中文 文件名.md"
+```
+
+> 💡 用 `python -m markitdown` 而不是直接 `markitdown`——不依赖 PATH，不依赖 venv 是否激活，Windows 上最稳妥的写法。路径含中文或空格时务必加引号。
 
 ---
 
-## 安装
+## 安装说明
+
+需要 **Python 3.10 及以上版本**。
 
 **完整功能（推荐）**
 
 ```bash
-pip install 'markitdown[all]'
+pip install "markitdown[all]"
 ```
 
 包含 OCR、音频转写、所有文档格式支持。
@@ -47,7 +73,7 @@ pip install markitdown
 **按需安装指定格式**
 
 ```bash
-pip install 'markitdown[pdf,docx,pptx,xlsx]'
+pip install "markitdown[pdf,docx,pptx,xlsx]"
 ```
 
 仅安装需要的格式依赖，按需组合。
@@ -175,8 +201,30 @@ MarkItDown 本身没有官方 GUI，但有以下第三方方案：
 
 ### 扫描版 PDF 无法提取文字？
 
-需要启用 OCR 功能，安装完整版（`markitdown[all]`），或配置 Tesseract OCR 引擎。
+安装完整版（`markitdown[all]`）后自动支持 OCR，或配置 Azure Document Intelligence 获得更高精度。
 
 ### 转换大文件时速度慢？
 
 对于超大 PDF，可以尝试先拆分再逐个转换。使用 Python API 时，可以配合异步处理提高吞吐量。
+
+### 已安装但提示找不到命令？（Windows）
+
+原因通常是 Python 环境与 PATH 不匹配，排查步骤：
+
+```powershell
+where.exe python
+python -m pip show markitdown
+```
+
+如果 `pip show` 找不到，说明当前 Python 没有安装 MarkItDown。直接用 `python -m markitdown` 可绕过所有 PATH 问题。
+
+### 文件名含中文或空格时报错？（Windows）
+
+在文件所在目录执行命令，并用引号包裹路径：
+
+```powershell
+cd D:\V
+python -m markitdown "IPD 敦煌主题-20260528.xlsx" -o "IPD 敦煌主题-20260528.md"
+```
+
+出现 `puremagic.main.PureError: Not a regular file` 不是文件损坏，是路径错误或不在当前目录。
