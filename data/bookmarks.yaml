@@ -312,7 +312,7 @@
       desc: 查看和清除图片、视频的 EXIF 元数据，防止位置等隐私信息泄露
       opensource: true
     - name: MAT2
-      url: https://0xacab.org/jvoisin/mat2
+      url: https://github.com/jvoisin/mat2
       desc: 批量清除文件元数据，支持 PDF、Office、图片、音频等多种格式
       opensource: true
 - category: 加密云盘
