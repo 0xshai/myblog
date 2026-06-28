@@ -124,9 +124,9 @@
       url: https://imagemagick.org
       desc: 命令行图片处理工具，批量转换格式、调整尺寸、压缩质量，功能全面
       opensource: true
-    - name: ImageGlass
-      url: https://imageglass.org
-      desc: 轻量现代的 Windows 图片查看器，支持 RAW、WebP、AVIF 等格式
+    - name: PicView
+      url: https://picview.org
+      desc: 快速、轻量的开源看图工具，支持 RAW、AVIF、HEIC 等格式，可直接删除元数据
       opensource: true
 - category: 设计
   icon: ✏️
