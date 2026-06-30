@@ -20,6 +20,10 @@
       url: https://github.com/microsoft/markitdown
       desc: 微软出品，将 PDF、Word、PPT、图片、音频等批量转换为 Markdown
       opensource: true
+    - name: fuck-u-code
+      url: https://github.com/Done-0/fuck-u-code
+      desc: 屎山代码检测器，七维度打分并生成毒舌点评报告，支持 14 种语言
+      opensource: true
 - category: 图表工具
   icon: 📊
   items:
@@ -68,6 +72,17 @@
     - name: "Gopeed"
       url: "https://gopeed.com"
       desc: "现代开源下载管理器，支持 HTTP、BT、磁力、ed2k，全平台可用，支持扩展"
+      opensource: true
+- category: 应用商店
+  icon: 🛍️
+  items:
+    - name: Komi Store
+      url: https://github.com/kurikomi-labs/komi-store
+      desc: 开源跨平台应用商店，聚合 GitHub/Codeberg 上的开发者发布，支持一键安装与自动更新
+      opensource: true
+    - name: "F-Droid"
+      url: "https://f-droid.org"
+      desc: "完全开源的 Android 应用商店，所有应用均可自由获取，无追踪无广告"
       opensource: true
 - category: 视频处理
   icon: 🎬
@@ -200,9 +215,28 @@
       url: https://rancherdesktop.io
       desc: 开源容器管理桌面工具，内置 Docker 引擎，Docker Desktop 免费替代
       opensource: true
+    - name: Supabase
+      url: https://supabase.com
+      desc: 开源 Firebase 替代，提供 PostgreSQL 数据库、用户认证、文件存储和 API，支持自托管
+      opensource: true
+    - name: Portainer
+      url: https://www.portainer.io
+      desc: Docker/Kubernetes 容器可视化管理面板，图形界面操作镜像、网络、容器，社区版免费
+      opensource: true
+    - name: Homepage
+      url: https://gethomepage.dev
+      desc: 高度可定制的自托管服务起始页，聚合所有自部署服务入口，支持状态监控与小组件
+      opensource: true
+    - name: n8n
+      url: https://n8n.io
+      desc: 开源工作流自动化平台，可视化拖拽连接各种 API 与服务，自托管后数据完全自主可控
+      opensource: true
 - category: 网站工具
   icon: 🌍
   items:
+    - name: Vercel
+      url: https://vercel.com
+      desc: 前端应用部署平台，连接 GitHub 自动构建上线，Next.js 原生支持，免费额度够个人项目
     - name: Umami
       url: https://umami.is
       desc: 开源隐私友好的网站统计，无 Cookie、不收集个人信息，可自托管，Google Analytics 替代
@@ -240,13 +274,21 @@
     - name: FreeDNS
       url: https://freedns.afraid.org
       desc: 老牌免费 DNS 与子域名服务，运营二十余年，提供大量共享域名后缀
-    - name: KataBump
-      url: https://katabump.com
-      desc: 提供免费永久域名（无需续期），同时支持 Discord 机器人免费托管
     - name: deSEC
       url: https://desec.io
       desc: 德国非营利免费 DNS 托管，隐私友好，提供 dedyn.io 子域名，支持动态 DNS
       opensource: true
+    - name: DigitalPlat
+      url: https://domain.digitalplat.org
+      desc: 非营利免费域名平台，提供 dpdns.org、us.kg 等多个后缀，开源，规模大且可靠
+      opensource: true
+    - name: Stackryze
+      url: https://domain.stackryze.com
+      desc: 面向开发者的免费子域名服务，提供 indevs.in 等后缀，开源透明，域名有效期一年需手动续期
+      opensource: true
+    - name: KataBump
+      url: https://katabump.com
+      desc: 提供免费永久域名（无需续期），同时支持 Discord 机器人免费托管
 - category: 文件同步
   icon: 🔄
   items:
@@ -264,6 +306,14 @@
     - name: OnlyOffice
       url: https://www.onlyoffice.com
       desc: 全平台开源办公套件，兼容 Office 格式
+      opensource: true
+    - name: Stirling-PDF
+      url: https://www.stirlingpdf.com
+      desc: 自托管 PDF 工具集，合并、分割、压缩、转换、OCR 全套操作，文件不离开自己服务器
+      opensource: true
+    - name: Reactive Resume
+      url: https://rxresu.me
+      desc: 开源简历生成器，多模板实时预览，数据完全自托管，无需把个人信息交给商业平台
       opensource: true
 - category: 笔记
   icon: 📝
@@ -445,3 +495,7 @@
       url: "https://github.com/marketplace/models"
       desc: "在 GitHub 内直接免费试用各家主流 AI 模型，无需额外注册"
       opensource: false
+    - name: Karpathy 编程准则
+      url: https://github.com/multica-ai/andrej-karpathy-skills
+      desc: 单文件 CLAUDE.md 配置，源自 Karpathy 对 LLM 编程通病的总结，约束 AI 减少过度工程化与越界改动
+      opensource: true
