@@ -20,6 +20,10 @@
       url: https://github.com/microsoft/markitdown
       desc: 微软出品，将 PDF、Word、PPT、图片、音频等批量转换为 Markdown
       opensource: true
+    - name: fuck-u-code
+      url: https://github.com/Done-0/fuck-u-code
+      desc: 屎山代码检测器，七维度打分并生成毒舌点评报告，支持 14 种语言
+      opensource: true
 - category: 图表工具
   icon: 📊
   items:
