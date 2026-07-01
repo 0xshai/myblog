@@ -244,9 +244,6 @@
     - name: Google Search Console
       url: https://search.google.com/search-console
       desc: 监控网站在 Google 搜索中的收录与关键词表现，可手动提交新页面加速索引
-    - name: itdog
-      url: https://www.itdog.cn
-      desc: 国内多节点网络测速，支持 ping、tcping、HTTP 测速、路由追踪，覆盖各省各运营商
     - name: WebPageTest
       url: https://www.webpagetest.org
       desc: 全球节点网页性能分析，瀑布图、Core Web Vitals、首屏渲染等指标一览
@@ -257,6 +254,14 @@
     - name: Tailscale
       url: https://tailscale.com
       desc: 基于 WireGuard 的零配置组网工具，让自托管服务安全跨网络访问，无需暴露端口
+      opensource: false
+    - name: ITDOG
+      url: https://www.itdog.cn
+      desc: 多地 Ping/TCPing/HTTP 测速与路由追踪，覆盖大陆各省运营商节点，可辅助判断网站连通性
+      opensource: false
+    - name: DNSChecker
+      url: https://dnschecker.org/
+      desc: 全球多节点 DNS 解析传播检测，换域名或改 DNS 记录后查各地解析是否已生效
       opensource: false
 - category: 免费域名
   icon: 🌏
@@ -342,6 +347,32 @@
     - name: Tuta Mail
       url: https://tuta.com
       desc: 德国团队，连元数据都加密
+      opensource: true
+- category: 临时邮箱
+  icon: 📮
+  items:
+    - name: 10 Minute Mail
+      url: https://10minutemail.com/
+      desc: 10分钟自动销毁的一次性邮箱，最简单直接的用完即扔
+    - name: Guerrilla Mail
+      url: https://www.guerrillamail.com/
+      desc: 老牌临时邮箱，唯一支持匿名发信，保留1小时
+    - name: Temp-Mail
+      url: https://temp-mail.org/en/
+      desc: 知名度最高的临时邮箱，免费版保留24小时
+    - name: mail.tm
+      url: https://mail.tm
+      desc: 界面现代的临时邮箱，提供开发者 API，保留时间比同类更长
+- category: 邮箱别名
+  icon: 🎭
+  items:
+    - name: addy.io
+      url: https://addy.io
+      desc: 开源邮箱别名转发，为每个网站生成独立别名，可自托管，方便溯源信息泄露源头
+      opensource: true
+    - name: SimpleLogin
+      url: https://simplelogin.io/
+      desc: 开源邮箱别名转发，已被 Proton 收购，与 Proton 生态深度整合
       opensource: true
 - category: 密码管理
   icon: 🔐
