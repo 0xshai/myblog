@@ -147,6 +147,10 @@
       url: https://picview.org
       desc: 快速、轻量的开源看图工具，支持 RAW、AVIF、HEIC 等格式，可直接删除元数据
       opensource: true
+    - name: Lap
+      url: https://github.com/julyx10/lap
+      desc: 本地优先的开源相册管理工具，基于 Tauri + Rust，AI 搜索/人脸聚类/智能标签均在本地运行，无需上传云端，支持 60+ 图片/RAW/视频格式，适合十万级大库
+      opensource: true
 - category: 设计
   icon: ✏️
   items:
@@ -298,6 +302,9 @@
     - name: KataBump
       url: https://katabump.com
       desc: 提供免费永久域名（无需续期），同时支持 Discord 机器人免费托管
+    - name: EE.CD
+      url: https://eecd.cc
+      desc: 免费二级域名分发平台，同时管理 ee.cd、my.uy、vps.cd、love.gd、g201.com、ad.sd、wxyz.cc，Google 账号验证注册，教育邮箱可领免费额度或续期，过期30天后回收
 - category: 文件同步
   icon: 🔄
   items:
@@ -533,4 +540,8 @@
     - name: Karpathy 编程准则
       url: https://github.com/multica-ai/andrej-karpathy-skills
       desc: 单文件 CLAUDE.md 配置，源自 Karpathy 对 LLM 编程通病的总结，约束 AI 减少过度工程化与越界改动
+      opensource: true
+    - name: text-to-lottie
+      url: https://github.com/diffusionstudio/lottie
+      desc: 开源 skill，配合 Claude Code / Codex 等 AI agent 用自然语言生成生产可用的 Lottie 动画 JSON，内置播放器实时预览编辑
       opensource: true
