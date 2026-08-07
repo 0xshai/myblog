@@ -274,9 +274,6 @@
 - category: 免费域名
   icon: 🌏
   items:
-    - name: eu.org
-      url: https://nic.eu.org
-      desc: 运营三十年的免费二级域名，稳定可靠，审核较慢但值得等
     - name: is-a.dev
       url: https://is-a.dev
       desc: 专为开发者提供的免费 .is-a.dev 子域名，GitHub PR 审核，流程透明
