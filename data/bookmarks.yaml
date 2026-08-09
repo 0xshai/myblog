@@ -427,6 +427,10 @@
       url: https://github.com/jvoisin/mat2
       desc: 批量清除文件元数据，支持 PDF、Office、图片、音频等多种格式，需在 Linux/WSL 下使用
       opensource: true
+    - name: Sherlock
+      url: https://github.com/sherlock-project/sherlock
+      desc: 开源 OSINT 用户名查询工具，可在 400+ 网站检查某用户名是否存在账号，命令行运行
+      opensource: true
 - category: 加密云盘
   icon: ☁️
   items:
