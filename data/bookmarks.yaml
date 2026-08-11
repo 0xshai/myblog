@@ -275,6 +275,10 @@
       url: https://ip.cx/
       desc: IP 归属地与威胁情报查询工具，可查 ISP、ASN、数据中心/代理识别、威胁记录等，免费无需注册
       opensource: false
+    - name: Wireshark
+      url: https://www.wireshark.org/
+      desc: 网络协议分析事实标准，跨平台抓包与深度协议解析，过滤语法强大，排障/安全分析/学习协议均适用
+      opensource: true
 - category: 免费域名
   icon: 🌏
   items:
