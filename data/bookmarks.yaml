@@ -544,6 +544,10 @@
       url: https://voicebox.sh
       desc: 开源本地 AI 语音工作室，声音克隆、全局听写、TTS 生成一体，数据不离本机，支持 MCP 接入 Claude
       opensource: true
+    - name: Modly
+      url: https://modly3d.app/
+      desc: 本地运行的图片转3D模型工具，支持Hunyuan3D、TripoSG等开源模型
+      opensource: true
 - category: AI 工具
   icon: 🧠
   items:
