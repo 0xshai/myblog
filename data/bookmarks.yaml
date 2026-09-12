@@ -518,6 +518,14 @@
     - name: Codewars
       url: https://www.codewars.com
       desc: 编程闯关练习，题目有趣，适合练语言本身而非刷算法
+    - name: 50Languages
+      url: https://50languages.com
+      desc: 免费多语言学习网站，100课音频+文本，覆盖56种语言的基础词汇与短句
+      opensource: false
+    - name: Musicca
+      url: https://www.musicca.com
+      desc: 互动式乐理学习工具，提供视奏、节奏、和弦等免费练习
+      opensource: false
 - category: 效率工具
   icon: ⏱️
   items:
