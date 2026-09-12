@@ -369,6 +369,10 @@
       url: https://solomd.app
       desc: 开源轻量 Markdown 编辑器，本地优先零遥测，内置 MCP 服务器可直接对接 Claude/Cursor，支持 PDF/DOCX/EPUB 导出
       opensource: true
+    - name: Standard Notes
+      url: https://app.standardnotes.com
+      desc: 端到端加密笔记应用，代码开源并经独立安全审计，2024年被Proton收购
+      opensource: true
 - category: 邮箱
   icon: 📬
   items:
