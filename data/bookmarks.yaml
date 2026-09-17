@@ -166,6 +166,10 @@
       url: https://excalidraw.com
       desc: 手绘风格白板工具
       opensource: true
+    - name: ray.so
+      url: https://ray.so/
+      desc: Vercel团队出品的代码截图生成工具，支持多主题渐变背景，可直接导出PNG/SVG
+      opensource: true
 - category: 系统工具
   icon: ⚙️
   items:
