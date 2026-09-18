@@ -24,6 +24,10 @@
       url: https://github.com/Done-0/fuck-u-code
       desc: 屎山代码检测器，七维度打分并生成毒舌点评报告，支持 14 种语言
       opensource: true
+    - name: Maple Mono
+      url: https://font.subf.dev/
+      desc: 圆角连字编程字体，支持中英文 2:1 完美对齐（CN 版），Nerd Font 图标齐全
+      opensource: true
 - category: 图表工具
   icon: 📊
   items:
