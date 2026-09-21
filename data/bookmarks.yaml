@@ -576,6 +576,10 @@
       url: https://modly3d.app/
       desc: 本地运行的图片转3D模型工具，支持Hunyuan3D、TripoSG等开源模型
       opensource: true
+    - name: FaceFusion
+      url: https://github.com/facefusion/facefusion
+      desc: 本地运行的开源换脸与人脸增强工具，支持图片、视频和实时摄像头
+      opensource: true
 - category: AI 工具
   icon: 🧠
   items:
