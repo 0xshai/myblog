@@ -20,6 +20,14 @@
       url: https://github.com/microsoft/markitdown
       desc: 微软出品，将 PDF、Word、PPT、图片、音频等批量转换为 Markdown
       opensource: true
+    - name: fuck-u-code
+      url: https://github.com/Done-0/fuck-u-code
+      desc: 屎山代码检测器，七维度打分并生成毒舌点评报告，支持 14 种语言
+      opensource: true
+    - name: Maple Mono
+      url: https://font.subf.dev/
+      desc: 圆角连字编程字体，支持中英文 2:1 完美对齐（CN 版），Nerd Font 图标齐全
+      opensource: true
 - category: 图表工具
   icon: 📊
   items:
@@ -38,6 +46,10 @@
     - name: Drawnix
       url: https://drawnix.com
       desc: 开源一体化白板，思维导图、流程图、自由画三合一，支持 Mermaid/Markdown 导入，可自托管
+      opensource: true
+    - name: Archify
+      url: https://tt-a1i.github.io/archify/
+      desc: Claude/Codex CLI/opencode 的 Agent Skill，用自然语言描述系统结构自动生成架构图/工作流/时序图/数据流图/状态机图
       opensource: true
 - category: 浏览器
   icon: 🦁
@@ -69,6 +81,17 @@
       url: "https://gopeed.com"
       desc: "现代开源下载管理器，支持 HTTP、BT、磁力、ed2k，全平台可用，支持扩展"
       opensource: true
+- category: 应用商店
+  icon: 🛍️
+  items:
+    - name: Komi Store
+      url: https://github.com/kurikomi-labs/komi-store
+      desc: 开源跨平台应用商店，聚合 GitHub/Codeberg 上的开发者发布，支持一键安装与自动更新
+      opensource: true
+    - name: "F-Droid"
+      url: "https://f-droid.org"
+      desc: "完全开源的 Android 应用商店，所有应用均可自由获取，无追踪无广告"
+      opensource: true
 - category: 视频处理
   icon: 🎬
   items:
@@ -87,6 +110,10 @@
     - name: MediaInfo
       url: https://mediaarea.net/en/MediaInfo
       desc: 视频与音频文件技术参数查看工具，编码、码率、色彩空间等信息一览无余
+      opensource: true
+    - name: Gyroflow
+      url: https://gyroflow.xyz
+      desc: 开源陀螺仪防抖工具，为动作相机视频提供云台级稳定处理
       opensource: true
 - category: 视频播放
   icon: 🎞️
@@ -128,6 +155,10 @@
       url: https://picview.org
       desc: 快速、轻量的开源看图工具，支持 RAW、AVIF、HEIC 等格式，可直接删除元数据
       opensource: true
+    - name: Lap
+      url: https://github.com/julyx10/lap
+      desc: 本地优先的开源相册管理工具，基于 Tauri + Rust，AI 搜索/人脸聚类/智能标签均在本地运行，无需上传云端，支持 60+ 图片/RAW/视频格式，适合十万级大库
+      opensource: true
 - category: 设计
   icon: ✏️
   items:
@@ -138,6 +169,10 @@
     - name: Excalidraw
       url: https://excalidraw.com
       desc: 手绘风格白板工具
+      opensource: true
+    - name: ray.so
+      url: https://ray.so/
+      desc: Vercel团队出品的代码截图生成工具，支持多主题渐变背景，可直接导出PNG/SVG
       opensource: true
 - category: 系统工具
   icon: ⚙️
@@ -189,6 +224,17 @@
       url: https://christitustech.github.io/winutil/
       desc: Chris Titus 出品的 Windows 一键优化工具，安装软件、系统调整、去除臃肿，一条命令启动
       opensource: true
+- category: 数据恢复
+  icon: 🚑
+  items:
+    - name: TestDisk & PhotoRec
+      url: https://www.cgsecurity.org/wiki/TestDisk
+      desc: 开源数据恢复工具组合，TestDisk 修复分区表与引导扇区，PhotoRec 从损坏或格式化的存储设备中找回文件
+      opensource: true
+    - name: GNU ddrescue
+      url: https://www.gnu.org/software/ddrescue/
+      desc: 块级磁盘镜像与恢复工具，专为故障硬盘设计，优先读取健康区域并跳过坏块，最大化找回数据
+      opensource: true
 - category: 自托管
   icon: 🏠
   items:
@@ -204,6 +250,18 @@
       url: https://supabase.com
       desc: 开源 Firebase 替代，提供 PostgreSQL 数据库、用户认证、文件存储和 API，支持自托管
       opensource: true
+    - name: Portainer
+      url: https://www.portainer.io
+      desc: Docker/Kubernetes 容器可视化管理面板，图形界面操作镜像、网络、容器，社区版免费
+      opensource: true
+    - name: Homepage
+      url: https://gethomepage.dev
+      desc: 高度可定制的自托管服务起始页，聚合所有自部署服务入口，支持状态监控与小组件
+      opensource: true
+    - name: n8n
+      url: https://n8n.io
+      desc: 开源工作流自动化平台，可视化拖拽连接各种 API 与服务，自托管后数据完全自主可控
+      opensource: true
 - category: 网站工具
   icon: 🌍
   items:
@@ -217,9 +275,6 @@
     - name: Google Search Console
       url: https://search.google.com/search-console
       desc: 监控网站在 Google 搜索中的收录与关键词表现，可手动提交新页面加速索引
-    - name: itdog
-      url: https://www.itdog.cn
-      desc: 国内多节点网络测速，支持 ping、tcping、HTTP 测速、路由追踪，覆盖各省各运营商
     - name: WebPageTest
       url: https://www.webpagetest.org
       desc: 全球节点网页性能分析，瀑布图、Core Web Vitals、首屏渲染等指标一览
@@ -231,12 +286,25 @@
       url: https://tailscale.com
       desc: 基于 WireGuard 的零配置组网工具，让自托管服务安全跨网络访问，无需暴露端口
       opensource: false
+    - name: ITDOG
+      url: https://www.itdog.cn
+      desc: 多地 Ping/TCPing/HTTP 测速与路由追踪，覆盖大陆各省运营商节点，可辅助判断网站连通性
+      opensource: false
+    - name: DNSChecker
+      url: https://dnschecker.org/
+      desc: 全球多节点 DNS 解析传播检测，换域名或改 DNS 记录后查各地解析是否已生效
+      opensource: false
+    - name: ip.cx
+      url: https://ip.cx/
+      desc: IP 归属地与威胁情报查询工具，可查 ISP、ASN、数据中心/代理识别、威胁记录等，免费无需注册
+      opensource: false
+    - name: Wireshark
+      url: https://www.wireshark.org/
+      desc: 网络协议分析事实标准，跨平台抓包与深度协议解析，过滤语法强大，排障/安全分析/学习协议均适用
+      opensource: true
 - category: 免费域名
   icon: 🌏
   items:
-    - name: eu.org
-      url: https://nic.eu.org
-      desc: 运营三十年的免费二级域名，稳定可靠，审核较慢但值得等
     - name: is-a.dev
       url: https://is-a.dev
       desc: 专为开发者提供的免费 .is-a.dev 子域名，GitHub PR 审核，流程透明
@@ -259,6 +327,12 @@
       url: https://domain.stackryze.com
       desc: 面向开发者的免费子域名服务，提供 indevs.in 等后缀，开源透明，域名有效期一年需手动续期
       opensource: true
+    - name: KataBump
+      url: https://katabump.com
+      desc: 提供免费永久域名（无需续期），同时支持 Discord 机器人免费托管
+    - name: EE.CD
+      url: https://eecd.cc
+      desc: 免费二级域名分发平台，同时管理 ee.cd、my.uy、vps.cd、love.gd、g201.com、ad.sd、wxyz.cc，Google 账号验证注册，教育邮箱可领免费额度或续期，过期30天后回收
 - category: 文件同步
   icon: 🔄
   items:
@@ -277,6 +351,26 @@
       url: https://www.onlyoffice.com
       desc: 全平台开源办公套件，兼容 Office 格式
       opensource: true
+    - name: Stirling-PDF
+      url: https://www.stirlingpdf.com
+      desc: 自托管 PDF 工具集，合并、分割、压缩、转换、OCR 全套操作，文件不离开自己服务器
+      opensource: true
+    - name: Reactive Resume
+      url: https://rxresu.me
+      desc: 开源简历生成器，多模板实时预览，数据完全自托管，无需把个人信息交给商业平台
+      opensource: true
+    - name: Readest
+      url: https://readest.com/
+      desc: 现代开源电子书阅读器，支持 EPUB/MOBI/PDF 等格式，高亮批注、翻译、TTS 朗读，全平台可用
+      opensource: true
+    - name: SumatraPDF
+      url: https://www.sumatrapdfreader.org/
+      desc: Windows 上轻量极速的阅读器，支持 PDF/EPUB/MOBI/CBZ 等，启动快、占用小，可免安装使用
+      opensource: true
+    - name: KOReader
+      url: https://koreader.rocks/
+      desc: 功能强大的开源文档阅读器，支持 EPUB/PDF/DJVU 等，Android 与墨水屏设备适用，可自建进度同步
+      opensource: true
 - category: 笔记
   icon: 📝
   items:
@@ -291,6 +385,14 @@
     - name: Obsidian
       url: https://obsidian.md
       desc: 本地优先的知识库与笔记工具，支持 Markdown
+    - name: SoloMD
+      url: https://solomd.app
+      desc: 开源轻量 Markdown 编辑器，本地优先零遥测，内置 MCP 服务器可直接对接 Claude/Cursor，支持 PDF/DOCX/EPUB 导出
+      opensource: true
+    - name: Standard Notes
+      url: https://app.standardnotes.com
+      desc: 端到端加密笔记应用，代码开源并经独立安全审计，2024年被Proton收购
+      opensource: true
 - category: 邮箱
   icon: 📬
   items:
@@ -305,6 +407,32 @@
       url: https://tuta.com
       desc: 德国团队，连元数据都加密
       opensource: true
+- category: 临时邮箱
+  icon: 📮
+  items:
+    - name: 10 Minute Mail
+      url: https://10minutemail.com/
+      desc: 10分钟自动销毁的一次性邮箱，最简单直接的用完即扔
+    - name: Guerrilla Mail
+      url: https://www.guerrillamail.com/
+      desc: 老牌临时邮箱，唯一支持匿名发信，保留1小时
+    - name: Temp-Mail
+      url: https://temp-mail.org/en/
+      desc: 知名度最高的临时邮箱，免费版保留24小时
+    - name: mail.tm
+      url: https://mail.tm
+      desc: 界面现代的临时邮箱，提供开发者 API，保留时间比同类更长
+- category: 邮箱别名
+  icon: 🎭
+  items:
+    - name: addy.io
+      url: https://addy.io
+      desc: 开源邮箱别名转发，为每个网站生成独立别名，可自托管，方便溯源信息泄露源头
+      opensource: true
+    - name: SimpleLogin
+      url: https://simplelogin.io/
+      desc: 开源邮箱别名转发，已被 Proton 收购，与 Proton 生态深度整合
+      opensource: true
 - category: 密码管理
   icon: 🔐
   items:
@@ -312,9 +440,9 @@
       url: https://bitwarden.com
       desc: 最好的开源密码管理器，可自托管
       opensource: true
-    - name: Keyguard
-      url: https://github.com/AChep/keyguard-app
-      desc: Bitwarden 第三方客户端，界面更现代
+    - name: AliasVault
+      url: https://www.aliasvault.net/
+      desc: 开源端到端加密密码管理器，内置邮箱别名生成器和邮件服务器，支持自托管
       opensource: true
 - category: 双因素认证
   icon: 🛡️
@@ -350,6 +478,10 @@
       url: https://github.com/jvoisin/mat2
       desc: 批量清除文件元数据，支持 PDF、Office、图片、音频等多种格式，需在 Linux/WSL 下使用
       opensource: true
+    - name: Sherlock
+      url: https://github.com/sherlock-project/sherlock
+      desc: 开源 OSINT 用户名查询工具，可在 400+ 网站检查某用户名是否存在账号，命令行运行
+      opensource: true
 - category: 加密云盘
   icon: ☁️
   items:
@@ -375,6 +507,12 @@
       url: https://saladict.net/
       desc: 浏览器划词翻译，可同步至欧路词典
       opensource: true
+    - name: Papago
+      url: https://papago.naver.com
+      desc: Naver 出品的翻译工具，中日韩等亚洲语言翻译质量突出，支持文本/语音/图片/对话翻译及离线翻译
+    - name: VoiceTra
+      url: https://voicetra.nict.go.jp
+      desc: 日本 NICT 出品的语音互译工具，支持 30+ 语言实时语音对话翻译，仅限手机 App，完全免费
 - category: 输入法
   icon: ⌨️
   items:
@@ -397,6 +535,10 @@
       url: https://typewords.cc
       desc: 以打字输入为核心的英语记忆系统，FSRS 间隔复习，数据本地存储
       opensource: true
+    - name: Enjoy
+      url: https://github.com/ZuodaoTech/everyone-can-use-english
+      desc: 李笑来《人人都能用英语》官方仓库，同时包含衍生出的 AI 外语学习助教 Enjoy（精听跟读、词典、语料训练）及"一千小时"训练方法论
+      opensource: true
     - name: Exercism
       url: https://exercism.org
       desc: 编程练习平台，有真人 mentor 异步代码评审，Python 轨道质量高
@@ -404,6 +546,22 @@
     - name: Codewars
       url: https://www.codewars.com
       desc: 编程闯关练习，题目有趣，适合练语言本身而非刷算法
+    - name: 50Languages
+      url: https://50languages.com
+      desc: 免费多语言学习网站，100课音频+文本，覆盖56种语言的基础词汇与短句
+      opensource: false
+    - name: AMEPOnline
+      url: https://ameponline.homeaffairs.gov.au/
+      desc: 澳大利亚政府免费英语学习平台，五个等级听说读写课程，任何人可用不限移民身份
+      opensource: false
+    - name: Standard Ebooks
+      url: https://standardebooks.org/
+      desc: 公共领域英文小说库，约1500本志愿者精校排版电子书，epub/azw3/kepub格式，排版质量高
+      opensource: true
+    - name: Musicca
+      url: https://www.musicca.com
+      desc: 互动式乐理学习工具，提供视奏、节奏、和弦等免费练习
+      opensource: false
 - category: 效率工具
   icon: ⏱️
   items:
@@ -434,6 +592,14 @@
       url: https://voicebox.sh
       desc: 开源本地 AI 语音工作室，声音克隆、全局听写、TTS 生成一体，数据不离本机，支持 MCP 接入 Claude
       opensource: true
+    - name: Modly
+      url: https://modly3d.app/
+      desc: 本地运行的图片转3D模型工具，支持Hunyuan3D、TripoSG等开源模型
+      opensource: true
+    - name: FaceFusion
+      url: https://github.com/facefusion/facefusion
+      desc: 本地运行的开源换脸与人脸增强工具，支持图片、视频和实时摄像头
+      opensource: true
 - category: AI 工具
   icon: 🧠
   items:
@@ -457,3 +623,11 @@
       url: "https://github.com/marketplace/models"
       desc: "在 GitHub 内直接免费试用各家主流 AI 模型，无需额外注册"
       opensource: false
+    - name: Karpathy 编程准则
+      url: https://github.com/multica-ai/andrej-karpathy-skills
+      desc: 单文件 CLAUDE.md 配置，源自 Karpathy 对 LLM 编程通病的总结，约束 AI 减少过度工程化与越界改动
+      opensource: true
+    - name: text-to-lottie
+      url: https://github.com/diffusionstudio/lottie
+      desc: 开源 skill，配合 Claude Code / Codex 等 AI agent 用自然语言生成生产可用的 Lottie 动画 JSON，内置播放器实时预览编辑
+      opensource: true
