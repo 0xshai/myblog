@@ -367,9 +367,6 @@
       url: https://www.sumatrapdfreader.org/
       desc: Windows 上轻量极速的阅读器，支持 PDF/EPUB/MOBI/CBZ 等，启动快、占用小，可免安装使用
       opensource: true
-    - name: KOReader
-      url: https://koreader.rocks/
-      desc: 功能强大的开源文档阅读器，支持 EPUB/PDF/DJVU 等，Android 与墨水屏设备适用，可自建进度同步
 - category: 笔记
   icon: 📝
   items:
